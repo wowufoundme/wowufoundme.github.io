@@ -1,0 +1,113 @@
+/*Normalize.css by Necolas*/
+@import "https://necolas.github.io/normalize.css/latest/normalize.css";
+
+/*
+*  Resetting Everything
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:active,
+a:focus,
+a:hover{
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Bitter';
+}
+
+.container{
+  background-color: #272b38;
+  color: #48d8a0;
+  width: inherit;
+  height: 100vh ;
+}
+
+.navigation{
+  width:100%;
+  height: 80px;
+  border-bottom: 1px solid rgba(108,122,137,0.15);
+}
+
+.social{
+  display: table;
+  float: right;
+  width: 50%;
+  height: inherit;
+}
+
+.social a{
+  display: table-cell;
+  width: 25%;
+  vertical-align: middle;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding-left: 20px;
+  transition: all linear 0.2s;
+}
+
+.facebook--bg,
+.facebook--bg:hover{
+  color: white;
+  background-color: #3b5998;
+}
+
+.twitter--bg,
+.twitter--bg:hover{
+  color: #fff;
+  background-color: #00aced;
+}
+
+.instagram--bg,
+.instagram--bg:hover{
+  color: #fff;
+  background-color: #125688;
+}
+
+.soundcloud--bg,
+.soundcloud--bg:hover{
+  color: #fff;
+  background-color: #ff7700;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  display: inline;
+}
+
+.hero{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+header h1{
+  font-size: 8em;
+  letter-spacing: 5px;
+}
+
+header h1 span{
+  color: rgba(108,122,137,0.4);
+}
+
+header h2{
+  font-size: 3em;
+}
+
+header h3{
+  font-size: 2em;
+}
+
+@@media query and (max-width:1024px) {
+  
+}
