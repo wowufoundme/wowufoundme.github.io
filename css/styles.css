@@ -19,13 +19,16 @@ a:hover{
 
 body{
   font-family: 'Bitter';
+  height: 100vh;
+  /*Fallback to Min-Height when "Inspect Element" is opened */
+  min-height: 100%;
 }
 
 .container{
   background-color: #272b38;
   color: #48d8a0;
   width: inherit;
-  height: 100vh ;
+  min-height: 100%;
 }
 
 .navigation{
@@ -108,6 +111,20 @@ header h3{
   font-size: 2em;
 }
 
+.invert{
+  color: rgba(108,122,137,0.4);
+}
+
+.switch{
+  color: rgba(108,122,137,0.6);
+  transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -0-transition: color 0.2s linear;
+}
+.switch:hover{
+  color: rgba(108,122,137,1);
+}
+
 @@media query and (max-width:1024px) {
-  
+
 }
