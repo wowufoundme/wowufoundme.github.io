@@ -125,6 +125,10 @@ header h3{
   color: rgba(108,122,137,1);
 }
 
-@@media query and (max-width:1024px) {
+
+/*
+ *  Responsive Queries
+ */
+@media query and (max-width: ) {
 
 }
