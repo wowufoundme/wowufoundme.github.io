@@ -1,4 +1,4 @@
-/*Normalize.css by Necolas*/
+/*Normalize.css by Necolas Gihub Repo*/
 @import "https://necolas.github.io/normalize.css/latest/normalize.css";
 
 /*
@@ -42,6 +42,10 @@ body{
   width: 50%;
 }
 
+.social--contact{
+  font-size: 20px;
+}
+
 .add--margin{
   margin-right: 20px;
 }
@@ -50,12 +54,12 @@ body{
   width: 90%;
   margin: 0 auto;
   margin-top: 30px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 header h1{
   font-size: 6em;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 header h1 span{
@@ -67,8 +71,9 @@ header h2{
 }
 
 header h3{
+  width: 75%;
   font-size: 2em;
-  line-height: 2em;
+  line-height: 1.75em;
 }
 
 .invert{
