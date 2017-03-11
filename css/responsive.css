@@ -17,6 +17,9 @@
 }
 
 @media all and (max-width:480px){
+  header h1{
+    font-size: 4.8em;
+  }
   nav ul{
     display: table-cell;
     height: auto;
