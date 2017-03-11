@@ -35,11 +35,7 @@ body{
   background-size:cover;
   background-attachment: fixed;
   background-position: center;
-
   font-family: 'Catamaran';
-  background-color: #fff;
-  /*Fallback to Min-Height when "Inspect Element" is opened */
-  min-height: 100%;
 }
 
 .container{
