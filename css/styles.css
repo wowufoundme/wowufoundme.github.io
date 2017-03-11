@@ -77,10 +77,6 @@ nav a{
   width: 50%;
 }
 
-.social--contact{
-  font-size: 20px;
-}
-
 .add--margin{
   margin-right: 20px;
 }
@@ -106,9 +102,9 @@ header h2{
 }
 
 header h3{
-  width: 75%;
+  width: 80%;
   font-size: 2em;
-  line-height: 1.75 em;
+  line-height: 1.7em;
 }
 
 .invert{
@@ -126,7 +122,14 @@ header h3{
   color: rgba(108,122,137,1);
 }
 
-@media all and (max-width:500px){
+@media all and (max-width:720px){
+  header h2{
+    font-size: 2em;
+  }
+  header h3{
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
   nav ul{
     width: 100%;
     display: block;
