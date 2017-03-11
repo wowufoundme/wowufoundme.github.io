@@ -30,14 +30,20 @@ a:hover{
 }
 
 body{
-  font-family: 'Bitter';
-  background-color: #272b38;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,1)),url(img/wall.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  font-family: 'Catamaran';
+  background-color: #fff;
   /*Fallback to Min-Height when "Inspect Element" is opened */
   min-height: 100%;
 }
 
 .container{
-  color: #48d8a0;
+  color: #fff;
   width: inherit;
   min-height: 100%;
   min-width: 100%;
@@ -46,8 +52,9 @@ body{
 nav{
   height:50px;
   width: 100%;
-  background-color: rgba(108,122,137,0.4);
+  background-color: transparent;
   position: relative;
+  border-bottom: 1px solid rgba(108,122,137,0.4);
 }
 
 nav ul{
@@ -98,21 +105,23 @@ header h1 span{
 
 header h2{
   font-size: 3em;
+  font-weight: 300;
 }
 
 header h3{
   width: 80%;
   font-size: 2em;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
 .switch{
-  color: rgba(108,122,137,0.6);
+  color: rgba(255,255,255,0.6);
   transition: color 0.2s linear;
   -moz-transition: color 0.2s linear;
   -0-transition: color 0.2s linear;
 }
 .switch:hover,
 .switch:active{
-  color: rgba(108,122,137,1);
+  color: rgba(255,255,255,1);
 }
