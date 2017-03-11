@@ -120,27 +120,3 @@ header h3{
 .switch:active{
   color: rgba(108,122,137,1);
 }
-
-@media all and (max-width:720px){
-  header h2{
-    font-size: 2em;
-  }
-  header h3{
-    width: 100%;
-    font-size: 1.4em;
-    line-height: 1.5em;
-  }
-  nav ul{
-    width: 100%;
-    display: block;
-  }
-  nav li{
-    width: 20%;
-  }
-}
-@media all and (max-width:480px){
-  nav ul{
-    display: table-cell;
-    height: auto;
-  }
-}

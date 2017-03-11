@@ -1,12 +1,24 @@
-@media all and (max-width:240px){
-  header h1{
-    font-size: 3em;
+@media all and (max-width:720px){
+  header h2{
+    font-size: 2em;
+  }
+  header h3{
+    width: 100%;
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+  nav ul{
+    width: 100%;
+    display: block;
+  }
+  nav li{
+    width: 20%;
   }
 }
 
-@media all and (max-width:360px){
-  header h1, header h2{
-    line-height: 1.25em;
-    font-size: 3.75em;
+@media all and (max-width:480px){
+  nav ul{
+    display: table-cell;
+    height: auto;
   }
 }
