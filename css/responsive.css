@@ -1,4 +1,7 @@
 @media all and (max-width:720px){
+  .hero h1{
+    font-size: 5.6em;
+  }
   header h2{
     font-size: 2em;
   }
@@ -17,7 +20,7 @@
 }
 
 @media all and (max-width:480px){
-  header h1{
+  .hero h1{
     font-size: 4.8em;
   }
   nav ul{

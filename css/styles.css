@@ -103,11 +103,7 @@ header h2{
 header h3{
   width: 80%;
   font-size: 2em;
-  line-height: 1.7em;
-}
-
-.invert{
-  color: rgba(108,122,137,0.4);
+  line-height: 1.5em;
 }
 
 .switch{
