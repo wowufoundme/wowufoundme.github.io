@@ -32,7 +32,6 @@ a:hover{
 body{
   font-family: 'Bitter';
   background-color: #272b38;
-  height: 100vh;
   /*Fallback to Min-Height when "Inspect Element" is opened */
   min-height: 100%;
 }
@@ -127,6 +126,7 @@ header h3{
     font-size: 2em;
   }
   header h3{
+    width: 100%;
     font-size: 1.4em;
     line-height: 1.5em;
   }
