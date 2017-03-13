@@ -156,6 +156,10 @@ nav a:active {
 	float: right;
 }
 
+.hero--right h3{
+  padding-top: 20px;
+}
+
 header {
 	position: absolute;
 	width: 50%;
