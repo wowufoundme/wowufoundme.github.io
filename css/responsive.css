@@ -9,6 +9,21 @@
   .hero--left h1{
     font-size: 4em;
   }
+  .facebook{
+    background-color: #3b5998;
+  }
+
+  .twitter{
+    background-color: #00aced;
+  }
+
+  .github{
+    background-color: #24292E;
+  }
+
+  .instagram{
+    background-color: #bc2a8d;
+  }
   h2{
     font-size: 2em;
   }
@@ -22,6 +37,7 @@
     display: block;
   }
   nav a{
+    color: #fff;
     width: 25%;
   }
 }
@@ -32,6 +48,5 @@
   }
   nav ul{
     display: table-cell;
-    height: auto;
   }
 }
