@@ -73,7 +73,7 @@ nav {
 	height: 50px;
 	width: 100%;
 	background-color: transparent;
-	position: relative;
+	position: fixed;
 }
 
 nav ul {
@@ -138,6 +138,7 @@ nav a:active {
 .hero--right {
 	width: 50%;
 	margin: 0 auto;
+  margin-top: 50px;
 	height: 100%;
 }
 

@@ -10,6 +10,7 @@
     height: 300px;
   }
   .hero--right{
+    margin-top: 0;
     height: 350px;
   }
   .hero--left h1{
