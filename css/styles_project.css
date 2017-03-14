@@ -130,9 +130,7 @@ nav a:active {
 	width: 50%;
 }
 
-.add--margin {
-	margin-right: 20px;
-}
+/*Hero covering width 50%*/
 
 .hero--left,
 .hero--right {
@@ -143,72 +141,75 @@ nav a:active {
 }
 
 .hero--left {
-	background-color: #053267;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7	)), url(img/uietmun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	float: left;
+	transition: background 200ms linear;
+	-webkit-transition:background 200ms linear;
+}
+
+.hero--left:hover{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/uietmun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .hero--right {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(img/Me.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7	)), url(img/wall.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
-	color: #fff;
+	transition: background 200ms linear;
+	-webkit-transition:background 200ms linear;
 	float: right;
 }
 
-.hero--right h3{
-  padding-top: 20px;
+.hero--right:hover{
+	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/wall.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
-header {
-	position: absolute;
-	width: 50%;
+h3{
+	font-size: 3.6em;
+	text-transform: uppercase;
 }
 
-h1 {
-	font-size: 6em;
-	letter-spacing: 3px;
-	font-weight: 700;
+h4 span{
+	color: rgba(255,255,255,0.5);
+	padding-left: 20px;
 }
 
-h1 span {
-	color: rgba(108, 122, 137, 0.7);
-}
-
-h2 {
-	font-size: 2.4em;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-h2 span {
-	border-bottom: 1px solid #fff;
-}
-
-h3 {
-	width: 90%;
-	font-weight: 100;
-}
-
-h3 span a {
+.btn--alt{
+	width:300px;
 	color: #fff;
-	border-bottom: 1px dotted #fff;
-	transition: all 100ms linear;
-  -webkit-transition: all 100ms linear;
-  -moz-transition: all 100ms linear;
-  -o-transition: all 100ms linear;
-  -ms-transition: all 100ms linear;
+	text-align: center;
+	margin:0 auto;
+	border: 1px solid #fff;
+	padding: 30px;
 }
 
-h3 span a:hover,
-h3 span a:active {
-	color: #fff;
-	border-bottom: 1px solid #fff;
+.hero--left a{
+	width: auto;
+	height: auto;
 }
 
-.soundcloud {
-	color: #FF6800;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
   color: rgba(5, 50, 103, 0.5);
