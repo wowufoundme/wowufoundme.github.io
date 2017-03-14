@@ -69,6 +69,16 @@ body {
 	height: 80%;
 }
 
+.home a{
+	color: #053267;
+	padding-top: 15px;
+	padding-left: 10%;
+}
+
+.home a:hover{
+	color: #053267;
+}
+
 nav {
 	height: 50px;
 	width: 100%;
@@ -141,42 +151,93 @@ nav a:active {
 }
 
 .hero--left {
+	float: left;
+}
+
+.hero--right {
+	float: right;
+}
+
+.col--1,
+.col--2,
+.col--3,
+.col--4{
+	width: auto;
+	height: 100%;
+}
+
+.col--1{
 	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7	)), url(img/uietmun.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	float: left;
-	transition: background 200ms linear;
-	-webkit-transition:background 200ms linear;
 }
-
-.hero--left:hover{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/uietmun.jpg);
+.col--2{
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7	)), url(img/webdnd.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
-.hero--right {
-	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7	)), url(img/wall.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	transition: background 200ms linear;
-	-webkit-transition:background 200ms linear;
-	float: right;
+.col--1,
+.col--2 {
+  position: relative;
+	display: table;
+  width: 100%;
 }
 
-.hero--right:hover{
-	background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(img/wall.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #053267;
 }
 
-h3{
-	font-size: 3.6em;
-	text-transform: uppercase;
+.col--1:hover .overlay,
+.col--2:hover .overlay {
+  opacity: 1;
+}
+
+.project--heading {
+  color: #fff;
+	width: 250px;
+	text-align: center;
+	padding: 30px;
+	border: 1px solid #fff;
+  position: absolute;
+	letter-spacing: 4px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.project--lead{
+	color: #fff;
+	font-size: 4em;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+	height: 100%;
+}
+
+.role{
+	color: #fff;
+	font-size: 2em;
+	font-weight: 100;
+	padding: 30px;
+	letter-spacing: 2px;
+}
+
+.role span{
+	font-weight: 700;
 }
 
 h4 span{
@@ -192,12 +253,6 @@ h4 span{
 	border: 1px solid #fff;
 	padding: 30px;
 }
-
-.hero--left a{
-	width: auto;
-	height: auto;
-}
-
 
 
 
