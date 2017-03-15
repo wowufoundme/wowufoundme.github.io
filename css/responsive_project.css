@@ -2,19 +2,26 @@
   .home a{
     display: none;
   }
+  .col--1,
+  .col--2{
+    height: 200px;
+  }
+  .container--1{
+    display: none;
+  }
+  .project--lead{
+    font-size: 2.4em;
+  }
   html{
     height: auto;
   }
   .hero--left,
   .hero--right{
     width: 100%;
-  }
-  .hero--left{
-    height: 375px;
+    height: 200px;
   }
   .hero--right{
     margin-top: 0;
-    height: 350px;
   }
   .hero--left h1{
     font-size: 4em;
@@ -41,6 +48,9 @@
     width: 100%;
     font-size: 1.2em;
     line-height: 1.5em;
+  }
+  nav{
+    position: fixed;
   }
   nav ul{
     width: 100%;
