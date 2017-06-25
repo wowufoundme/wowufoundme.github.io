@@ -5,7 +5,7 @@ $(window).load(function(){
   $("header").css("transform","translate3d(0,0,0)");
   $(".content--wrapper").css("transform","translate3d(0,0,0)");
   $(".loader").fadeIn("slow");
-  $(".loader").delay(2000).fadeOut("slow");
+  $(".loader").delay(1000).fadeOut("slow");
 });
 
 $(window).scroll(function() {

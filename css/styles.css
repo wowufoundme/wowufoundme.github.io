@@ -6,7 +6,6 @@
  	height: 100%;
  	z-index: 9999;
 	background: url('img/loading.svg') 50% 50% no-repeat rgba(36,41,46,1);
-  animation: zoom 3s linear 1;
 }
 
 /*NORMALIZE.CSS*/
@@ -546,6 +545,7 @@ nav a li:active {
 .animated--logo{
   width: 10%;
   height: inherit;
+  animation: zoom 1s linear infinite;
 }
 
 .header--container{
@@ -824,25 +824,30 @@ header{
 
 @keyframes zoom {
   0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
+  50%{transform:scale(0.4);}
+  100%{transform:scale(1);}
 }
 
 @-webkit-keyframes zoom {
   0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
+  50%{transform:scale(0.4);}
+  100%{transform:scale(1);}
 }
 
 @-ms-keyframes zoom {
   0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
+  50%{transform:scale(0.4);}
+  100%{transform:scale(1);}
 }
 
 @-moz-keyframes zoom {
   0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
+  50%{transform:scale(0.4);}
+  100%{transform:scale(1);}
 }
 
 @-o-keyframes zoom {
   0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
+  50%{transform:scale(0.4);}
+  100%{transform:scale(1);}
 }
