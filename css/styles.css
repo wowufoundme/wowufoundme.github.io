@@ -188,6 +188,10 @@ nav a li:active {
 	transform: translate3d(-50%,0,0);
 }
 
+.list--container--main:nth-last-child(4) li{
+	font-weight: 700;
+}
+
 .list--container--main{
 	list-style-type: none;
 	font-size: 20px;
