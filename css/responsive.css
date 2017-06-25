@@ -11,6 +11,13 @@
     .marker{
       font-size: 40px;
     }
+    nav ul{
+      width: 700px;
+    }
+    nav ul a:first-child{
+      font-size: 1.2em;
+      width: 300px;
+    }
 }
 
 @media screen and (max-width: 960px){
