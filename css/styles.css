@@ -2,6 +2,18 @@
 
 @import "https://necolas.github.io/normalize.css/latest/normalize.css";
 
+.loader{
+ 	position: fixed;
+ 	left: 0px;
+ 	top: 0px;
+ 	width: 100%;
+ 	height: 100%;
+ 	z-index: 9999;
+	background: url('img/loading.svg') 50% 50% no-repeat #222;
+}
+
+
+
 /*
 *  Resetting Everything
 */
@@ -41,76 +53,173 @@ a:hover {
 	*zoom: 1;
 }
 
-h1,
-h2,
-h3 {
-	padding-left: 20px;
-	padding-right: 20px;
-}
 
-h3 {
-	font-size: 1.6em;
-	line-height: 1.5em;
-	letter-spacing: 1px;
-}
-
-html {
-	height: 100vh;
-}
-
-body {
-	font-family: 'Catamaran', Helvetica, sans-serif;
-	height: inherit;
-}
-
-.container {
+body{
+	background-color: #24292e;
+	font-family: 'Inconsolata';
 	color: #fff;
-	width: 100%;
-	height: 80%;
+}
+
+.blue{
+	color: #03a9f4 !important;
+}
+
+.green{
+	color: #26C281 !important;
+}
+
+.back--blue{
+	color: #fff;
+	background-color: #03a9f4;
+}
+
+.back--green{
+	color: #fff;
+	background-color: #26C281;
 }
 
 nav {
-	height: 50px;
 	width: 100%;
-	background-color: transparent;
 	position: fixed;
+	z-index: 9998;
+	transition: all 300ms linear;
 }
 
 nav ul {
 	padding: 0;
+	font-size: 14px;
 	float: right;
 	margin: 0 auto;
-	width: 400px;
+	width: 650px;
 	height: 100%;
 }
 
-nav a {
-	color: #053267;
-	display: inline;
+nav ul a {
+	display: table;
+	vertical-align: middle;
 	float: left;
 	width: 100px;
 	height: inherit;
 	text-align: center;
+}
+
+nav ul a:first-child{
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: 700;
+	width: 250px;
+}
+
+nav li {
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
 	transition: all 100ms linear;
   -webkit-transition: all 100ms linear;
 	-moz-transition: all 100ms linear;
 	-o-transition: all 100ms linear;
 }
 
-nav li {
-	display: inline-block;
-	text-align: center;
-	height: inherit;
-	padding-top: 15px;
-	line-height: 2em;
-}
-
-nav a:hover,
-nav a:active {
+nav a li:hover,
+nav a li:active {
 	color: #fff;
+	background-color: #26C281;
 }
 
-.facebook:hover {
+.header--container{
+	padding-top: 50px;
+	width: 600px;
+	height: 80vh;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header--container--width--def{
+	width: 100%;
+}
+
+.header--container--width--def i{
+	color: #6a737d;
+	font-size: 20px;
+	padding-top: 100px;
+}
+
+.main--title{
+	height: 150px;
+	margin-top: 100px;
+	padding-bottom: 20px;
+	font-size: 48px;
+	font-weight: 700;
+	color: #6a737d;
+}
+
+.main--title:hover{
+	animation: vibrate-large 500ms linear 1;
+}
+
+.sub--title{
+	width: 100%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	font-size: 24px;
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	border: 5px solid #6a737d;
+	border-top: 0px;
+}
+
+.content--wrapper{
+	width: 750px;
+	margin: 0 auto;
+}
+
+.marker{
+	position: relative;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 20px;
+	font-size: 32px;
+	font-weight: 700;
+	color: #6a737d;
+	transition: all 1s ease-in-out;
+}
+
+.shift{
+	transform: translate3d(-50%,0,0);
+}
+
+.list--container--main{
+	list-style-type: none;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.list--container--main li{
+	color: #03a9f4;
+	border-left: 5px solid #6a737d;
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.list--container--main li i{
+	color: #6a737d;
+	padding-left: 10px;
+}
+
+.list--container--main li span{
+	color: #6a737d;
+	font-size: 12px;
+	border: 1px solid #03a9f4;
+	padding: 5px;
+	margin-left: 5px;
+	border-radius: 5px;
+}
+
+.mail{
+	font-size: 20px;
+}
+
+/*.facebook:hover {
 	background-color: #3b5998;
 }
 
@@ -124,132 +233,28 @@ nav a:active {
 
 .instagram:hover {
 	background-color: #bc2a8d;
-}
+}*/
 
-.social {
-	width: 50%;
-}
-
-.add--margin {
-	margin-right: 20px;
-}
-
-.hero--left,
-.hero--right {
-	width: 50%;
-	margin: 0 auto;
-  margin-top: 50px;
-	height: 100%;
-}
-
-.hero--left {
-	background-color: #053267;
-	float: left;
-}
-
-.hero--right {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)), url(img/Me.jpg);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-	color: #fff;
-	float: right;
-}
-
-.hero--right h3{
-  padding-top: 20px;
-}
-
-header {
-	position: absolute;
-	width: 50%;
-}
-
-h1 {
-	font-size: 6em;
-	letter-spacing: 3px;
-	font-weight: 700;
-}
-
-h1 span {
-	color: rgba(108, 122, 137, 0.7);
-}
-
-h2 {
-	font-size: 2.4em;
-	font-weight: 500;
-	letter-spacing: 1px;
-}
-
-h2 span {
-	border-bottom: 1px solid #fff;
-}
-
-h3 {
-	width: 90%;
-	font-weight: 100;
-}
-
-h3 span a {
-	color: #fff;
-	border-bottom: 1px dotted #fff;
-	transition: all 100ms linear;
-  -webkit-transition: all 100ms linear;
-  -moz-transition: all 100ms linear;
-  -o-transition: all 100ms linear;
-  -ms-transition: all 100ms linear;
-}
-
-h3 span a:hover,
-h3 span a:active {
-	color: #fff;
-	border-bottom: 1px solid #fff;
-}
-
-.soundcloud {
-	color: #FF6800;
-}
-
-.footer{
-  color: rgba(5, 50, 103, 0.5);
-  width: 300px;
-  height: 50px;
-  display: table;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
-.inner{
-  display: table-cell;
-  vertical-align: middle;
-  letter-spacing: 1px;
-}
-
-.btn--1{
-	text-align: center;
-	font-size: 100%;
-	border: 1px solid #fff;
-	width: 250px;
-	margin: 0 auto;
-	padding: 30px;
-	letter-spacing: 4px;
-	color: #fff;
-	transition: all 100ms ease-in-out;
-	-moz-transition: all 100ms ease-in-out;
-	-o-transition: all 100ms ease-in-out;
-	-ms-transition: all 100ms ease-in-out;
-}
-
-.btn--inn{
-	margin: 0 auto;
-	width: inherit;
-	height: auto;
-}
-
-.btn--1:hover,
-.btn--1:active{
-	background-color: #fff;
-	color: #053267;
+@keyframes vibrate-large{
+	0%{transform:translate(1px,0);}
+	5%{transform:translate(-1px,0);}
+	10%{transform:translate(2px,0);}
+	15%{transform:translate(-2px,0);}
+	20%{transform:translate(4px,0);}
+	25%{transform:translate(-4px,0);}
+	30%{transform:translate(8px,0);}
+	35%{transform:translate(-8px,0);}
+	40%{transform:translate(16px,0);}
+	45%{transform:translate(-16px,0);}
+	50%{transform:translate(32px,0);}
+	55%{transform:translate(-32px,0);}
+	60%{transform:translate(16px,0);}
+	65%{transform:translate(-16px,0);}
+	70%{transform:translate(8px,0);}
+	75%{transform:translate(-8px,0);}
+	80%{transform:translate(4px,0);}
+	85%{transform:translate(-4px,0);}
+	90%{transform:translate(2px,0);}
+	95%{transform:translate(-2px,0);}
+	100%{transform:translate(1px,0);}
 }

@@ -1,65 +1,43 @@
-@media all and (max-width:960px){
-  .home a{
-    display: none;
-  }
-  html{
-    height: auto;
-  }
-  .hero--left,
-  .hero--right{
-    width: 100%;
-  }
-  .hero--left{
-    height: 375px;
-  }
-  .hero--right{
-    margin-top: 0;
-    height: 350px;
-  }
-  .hero--left h1{
-    font-size: 4em;
-  }
-  .facebook{
-    background-color: #3b5998;
-  }
-
-  .twitter{
-    background-color: #00aced;
-  }
-
-  .github{
-    background-color: #24292E;
-  }
-
-  .instagram{
-    background-color: #bc2a8d;
-  }
-  h2{
-    font-size: 2em;
-  }
-  h3{
-    width: 100%;
-    font-size: 1.2em;
-    line-height: 1.5em;
-  }
+@media screen and (max-width: 720px){
   nav ul{
     width: 100%;
-    display: block;
   }
-  nav a{
-    color: #fff;
+  nav ul a{
     width: 25%;
   }
-  .btn--1{
-    padding: 20px;
+  nav ul a:first-child{
+    display: none;
   }
-}
-
-@media all and (max-width:480px){
-  .hero--left h1{
-    font-size: 3em;
+  .header--container,
+  .content--wrapper{
+    width: 98%;
+    height: 100%;
   }
-  nav ul{
-    display: table-cell;
+  .main--title{
+    height: 80px;
+    font-size: 32px;
+    padding-bottom: 0;
+  }
+  .header--container--width--def i{
+    padding-top: 50px;
+  }
+  .sub--title{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  .shift{
+    transform: translate3d(-30%,0,0);
+  }
+  .list--container--main{
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .list--container--main li{
+    border-left: 2px solid #6a737d;
+    padding-left: 5px;
+  }
+  .mail{
+    font-size: 16px;
   }
 }
