@@ -9,11 +9,6 @@
   animation: zoom 3s linear 1;
 }
 
-@keyframes zoom {
-  0%{transform:scale(1);}
-  100%{transform:scale(0.01);}
-}
-
 /*NORMALIZE.CSS*/
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
@@ -825,4 +820,29 @@ header{
 	90%{transform:translate(2px,0);}
 	95%{transform:translate(-2px,0);}
 	100%{transform:translate(1px,0);}
+}
+
+@keyframes zoom {
+  0%{transform:scale(1);}
+  100%{transform:scale(0.01);}
+}
+
+@-webkit-keyframes zoom {
+  0%{transform:scale(1);}
+  100%{transform:scale(0.01);}
+}
+
+@-ms-keyframes zoom {
+  0%{transform:scale(1);}
+  100%{transform:scale(0.01);}
+}
+
+@-moz-keyframes zoom {
+  0%{transform:scale(1);}
+  100%{transform:scale(0.01);}
+}
+
+@-o-keyframes zoom {
+  0%{transform:scale(1);}
+  100%{transform:scale(0.01);}
 }
