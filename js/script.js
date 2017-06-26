@@ -25,10 +25,12 @@ $(window).scroll(function() {
 
 $(window).scroll(function() {
     if($(window).scrollTop()>50){
+      $("body").css("background-color","#222");
       $("header").css("transform","translate3d(0,-500px,0)");
       $(".content--wrapper").css("transform","translate3d(0,-100px,0)");
     }
     else{
+      $("body").css("background-color","#24292e");
       $("header").css("transform","translate3d(0,0,0)");
       $(".content--wrapper").css("transform","translate3d(0,0,0)");
     }
