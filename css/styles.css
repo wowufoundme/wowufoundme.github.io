@@ -468,7 +468,7 @@ a:hover {
 
 
 body{
-	background-color: #24292e;
+  background-color: #24292e;
 	font-family: 'Inconsolata';
 	color: #fff;
   transition: all 100ms linear;
@@ -493,7 +493,7 @@ body{
 }
 
 nav {
-  color: #fff;
+  color: #222;
 	width: 100%;
 	position: fixed;
 	z-index: 9998;
@@ -564,6 +564,13 @@ nav a li:active {
 	color: #6a737d;
 	font-size: 20px;
 	padding-top: 100px;
+  animation: up-down 1s ease-in-out infinite;
+}
+
+@keyframes up-down {
+  0%{transform:translateY(10px);}
+  50%{transform:translateY(-10px);}
+  100%{transform:translateY(10px);}
 }
 
 .main--title{
@@ -571,7 +578,7 @@ nav a li:active {
 	margin-top: 100px;
 	padding-bottom: 20px;
 	font-size: 48px;
-	font-weight: 700;
+	font-weight: 300;
 	color: #6a737d;
 }
 
@@ -581,38 +588,34 @@ nav a li:active {
 
 .sub--title{
 	width: 100%;
-	padding-left: 20px;
-	padding-bottom: 20px;
+  padding: 40px 20px;
 	font-size: 24px;
 	letter-spacing: 2px;
 	line-height: 1.5em;
 	border: 5px solid #6a737d;
 	border-top: 0px;
+  border-radius: 100px;
 }
 
 .content--wrapper{
 	width: 750px;
 	margin: 0 auto;
   transition: all 200ms linear;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .marker{
 	position: relative;
-	text-align: center;
+  text-align: center;
 	padding-top: 50px;
 	margin-bottom: 20px;
 	font-size: 32px;
 	font-weight: 700;
 	color: #6a737d;
-	transition: all 1s ease-in-out;
+	transition:all 1s ease-in-out;
 }
 
-.shift{
-	transform: translate3d(-50%,0,0);
-  letter-spacing: 5px;
-}
-
-.list--container--main:nth-last-child(4) li{
+.list--container--main:nth-last-child(6) li{
 	font-weight: 700;
 }
 
@@ -665,13 +668,13 @@ nav a li:active {
 
 .list--container--main li i{
 	color: #6a737d;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .list--container--main li span{
 	color: #6a737d;
 	font-size: 12px;
-	border: 1px solid #03a9f4;
+	border: 1px solid #6a737d;
 	padding: 5px;
 	margin-left: 5px;
 	border-radius: 5px;
@@ -850,4 +853,18 @@ header{
   0%{transform:scale(1);}
   50%{transform:scale(0.4);}
   100%{transform:scale(1);}
+}
+
+@keyframes lock {
+  0%{letter-spacing: 500px;}
+  10%{letter-spacing: 450px;}
+  20%{letter-spacing: 400px;}
+  30%{letter-spacing: 350px;}
+  40%{letter-spacing: 300px;}
+  50%{letter-spacing: 250px;}
+  60%{letter-spacing: 200px;}
+  70%{letter-spacing: 150px;}
+  80%{letter-spacing: 100px;}
+  90%{letter-spacing: 50px;}
+  100%{letter-spacing: 0}
 }
