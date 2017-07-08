@@ -1,22 +1,9 @@
 @media screen and (min-width:1400px){
-    .main--title{
-      font-size: 72px;
-    }
     .header--container{
       width: 800px;
     }
     .sub--title{
       font-size: 32px;
-    }
-    .marker{
-      font-size: 40px;
-    }
-    nav ul{
-      width: 700px;
-    }
-    nav ul a:first-child{
-      font-size: 1.2em;
-      width: 300px;
     }
 }
 
@@ -30,24 +17,21 @@
     display: block;
   }
   nav ul a{
-    width: 25%;
-  }
-  nav ul a:first-child{
-    display: none;
+    width: 20%;
   }
   .header--container,
   .content--wrapper{
     height: 100%;
   }
   .header--container{
-    width: 90%;
+    width: 100%;
   }
   .content--wrapper{
-    width: 90%;
+    width: 500px;
   }
   .main--title{
     height: 80px;
-    font-size: 32px;
+    font-size: 60px;
     padding-bottom: 0;
   }
   .header--container--width--def i{
@@ -71,7 +55,6 @@
     padding-left: 10px;
   }
   .mail{
-    font-weight: 700;
     font-size: 14px;
     line-height: 2em;
   }

@@ -5,7 +5,7 @@
  	width: 100%;
  	height: 100%;
  	z-index: 9999;
-	background: url('img/loading.svg') 50% 50% no-repeat #222;
+	background: url('img/loading.svg') 50% 50% no-repeat #6715E0;
 }
 
 /*NORMALIZE.CSS*/
@@ -471,44 +471,39 @@ html{
 }
 
 body{
-	font-family: 'Inconsolata';
+	font-family: 'Source Sans Pro';
 	color: #fff;
   transition: all 100ms linear;
-  background: #000;
+  background:#fff;
 }
 
 .blue{
-	color: #03a9f4 !important;
+	color: #fff !important;
 }
 
 .green{
-	color: #26C281 !important;
+	color: #fff !important;
 }
 
-.back--blue{
-	color: #fff;
-	background-color: #03a9f4;
-}
-
-.back--green{
-	color: #fff;
-	background-color: #26C281;
+.mark{
+  text-decoration: underline !important;
 }
 
 nav {
-  color: #222;
+  color: #fff;
 	width: 100%;
 	position: fixed;
 	z-index: 9998;
 	transition: all 300ms linear;
+  background-color: #6715E0;
 }
 
 nav ul {
 	padding: 0;
-	font-size: 14px;
+	font-size: 16px;
 	float: right;
 	margin: 0 auto;
-	width: 650px;
+	width: 500px;
 	height: 100%;
 }
 
@@ -520,13 +515,6 @@ nav ul a {
 	width: 100px;
 	height: inherit;
 	text-align: center;
-}
-
-nav ul a:first-child{
-	text-align: center;
-	letter-spacing: 1px;
-	font-weight: 700;
-	width: 250px;
 }
 
 nav li {
@@ -541,8 +529,8 @@ nav li {
 
 nav li:hover,
 nav li:focus{
-  color: #fff;
-  background-color: transparent;
+  color: #6715E0;
+  background-color: #fff;
 }
 
 .animated--logo{
@@ -557,11 +545,12 @@ nav li:focus{
 	height: 100%;
 	margin: 0 auto;
 	text-align: center;
-  background: linear-gradient(90deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/wall.svg);
+  background-color: #6715E0;
+  /*background: linear-gradient(90deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/wall.svg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
 .header--container--width--def{
@@ -571,7 +560,7 @@ nav li:focus{
 }
 
 .header--container--width--def i{
-	color: #6a737d;
+	color: #fff;
 	font-size: 20px;
 	padding: 50px;
   animation: up-down 1s ease-in-out infinite;
@@ -588,9 +577,9 @@ nav li:focus{
 	height: 150px;
 	margin-top: 100px;
 	padding-bottom: 20px;
-	font-size: 48px;
-	font-weight: 300;
-	color: #6a737d;
+	font-size: 72px;
+	font-weight: 200;
+	color: #fff;
 }
 
 .main--title:hover{
@@ -600,16 +589,16 @@ nav li:focus{
 .sub--title{
 	width: 100%;
   padding: 40px 20px;
-	font-size: 24px;
+	font-size: 30px;
+  font-weight: 300;
 	letter-spacing: 2px;
 	line-height: 1.5em;
-	border: 5px solid #6a737d;
+	border: 5px solid #fff;
 	border-top: 0px;
-  border-radius: 100px;
 }
 
 .content--wrapper{
-	width: 800px;
+	width: 600px;
 	margin: 0 auto;
   transition: all 200ms linear;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -621,60 +610,65 @@ nav li:focus{
 	padding-top: 50px;
 	margin-bottom: 20px;
 	font-size: 32px;
-	font-weight: 700;
+	font-weight: 300;
 	color: #6a737d;
 	transition:all 1s ease-in-out;
 }
 
-.list--container--main:nth-last-child(6) li{
+/*.list--container--main:nth-last-child(6) li{
 	font-weight: 700;
-}
+}*/
 
 .list--container--main{
 	list-style-type: none;
 	font-size: 20px;
+  font-weight: 300;
   overflow: hidden;
-	letter-spacing: 2px;
+  line-height: 1.5;
 }
 
 .list--container--main li{
-	color: #03a9f4;
-	border-left: 5px solid #6a737d;
+	color: #062034;
+	border-left: 5px solid #000;
 	padding-left: 20px;
   transform: translate3d(200%,0,0);
 	margin-top: 10px;
 }
 
 .list--container--main li:nth-child(1){
-  transition: all 200ms ease-in-out;
+  transition: all 200ms linear;
 }
 
 .list--container--main li:nth-child(2){
-  transition: all 400ms ease-in-out;
+  transition: all 400ms linear;
 }
 
 .list--container--main li:nth-child(3){
-  transition: all 600ms ease-in-out;
+  transition: all 600ms linear;
 }
 
 .list--container--main li:nth-child(4){
-  transition: all 800ms ease-in-out;
+  transition: all 800ms linear;
 }
 
 .list--container--main li:nth-child(5){
-  transition: all 1000ms ease-in-out;
+  transition: all 1000ms linear;
 }
 
 .list--container--main li:nth-child(6){
-  transition: all 1200ms ease-in-out;
+  transition: all 1200ms linear;
 }
 
 .list--container--main li:nth-child(7){
-  transition: all 1400ms ease-in-out;
+  transition: all 1400ms linear;
 }
 
 .list--container--main li:nth-child(8){
-  transition: all 1600ms ease-in-out;
+  transition: all 1600ms linear;
+}
+
+.list--container--main li:nth-child(9){
+  transition: all 1800ms linear;
 }
 
 .list--container--main li i{
@@ -697,28 +691,15 @@ nav li:focus{
 }
 
 .mail a{
-	display: none;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px;
+  background-color: #6715E0;
 }
 
 header{
   transition: all 1s ease-in-out;
 }
-
-/*.facebook:hover {
-	background-color: #3b5998;
-}
-
-.twitter:hover {
-	background-color: #00aced;
-}
-
-.github:hover {
-	background-color: #24292E;
-}
-
-.instagram:hover {
-	background-color: #bc2a8d;
-}*/
 
 @keyframes vibrate-large{
 	0%{transform:translate(1px,0);}
