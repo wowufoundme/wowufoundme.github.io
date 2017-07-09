@@ -19,12 +19,14 @@
   .content--wrapper{
     height: 100%;
   }
-  .content--wrapper{
+  .content--wrapper,
+  .header--container--width--def{
+    margin-top: 0;
     width: 90%;
   }
   .main--title{
     height: 80px;
-    font-size: 60px;
+    font-size: 48px;
     padding-bottom: 0;
   }
   .header--container--width--def i{
@@ -45,5 +47,15 @@
   .list--container--main li{
     border-left: 5px solid #6a737d;
     padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  nav ul{
+    width: 100%;
+    float: none;
+  }
+  .main--title{
+    font-size: 32px;
   }
 }

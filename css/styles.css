@@ -489,25 +489,14 @@ body{
   text-decoration: underline !important;
 }
 
-nav {
-  color: #fff;
-	width: 100%;
-	position: fixed;
-  margin-top: -100px;
-	z-index: 999;
-	transition: all 300ms linear;
-  overflow: hidden;
-  background-color: #6715E0;
-}
-
 .bt-menu{
   position: fixed;
-  z-index: 9999;
+  z-index: 9998;
   bottom: 20px;
   right: 20px;
   display: block;
-  width: 50px;
-  height: 50px;
+  width:50px;
+  height: 45px;
   background-color: #6715E0;
   cursor: pointer;
 }
@@ -516,6 +505,36 @@ nav {
   padding: 10px;
   width: 50px;
   height: auto;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin:7px;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+  width: 8px;
+}
+
+.change .bar2 {width: 16px;}
+.change .bar3 {
+  width: 24px;
+}
+
+nav {
+  color: #fff;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	transition: all 300ms linear;
+  overflow: hidden;
+  transform: rotateX(90deg);
+  transform-origin: top;
+  background-color: #6715E0;
+  border-bottom: 1px solid #fff;
 }
 
 nav ul {
@@ -527,7 +546,9 @@ nav ul {
 	height: 100%;
 }
 
-nav ul a {
+nav ul a,
+nav ul a:focus,
+nav ul a:active {
   color: inherit;
 	display: table;
 	vertical-align: middle;
@@ -537,7 +558,7 @@ nav ul a {
 	text-align: center;
 }
 
-nav li {
+nav li{
   color: inherit;
 	display: table-cell;
 	vertical-align: middle;
@@ -547,8 +568,7 @@ nav li {
 	-o-transition: all 100ms linear;
 }
 
-nav li:hover,
-nav li:focus{
+nav li:hover{
   color: #6715E0;
   background-color: #fff;
 }
@@ -566,6 +586,8 @@ nav li:focus{
 	margin: 0 auto;
 	text-align: center;
   background-color: #6715E0;
+  transition: all 100ms linear;
+  //transform-style: preserve-3d;
   /*background: linear-gradient(90deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/wall.svg);
   background-position: center;
   background-size: cover;
@@ -574,7 +596,7 @@ nav li:focus{
 }
 
 .header--container--width--def{
-	width: 600px;
+	width: 50%;
   height: 500px;
   margin: 0 auto;
 }
@@ -597,7 +619,7 @@ nav li:focus{
 	height: 150px;
 	margin-top: 100px;
 	padding-bottom: 20px;
-	font-size: 72px;
+	font-size: 60px;
 	font-weight: 200;
 	color: #fff;
 }
@@ -608,7 +630,7 @@ nav li:focus{
 
 .sub--title{
 	width: 100%;
-  padding: 40px 20px;
+  padding: 20px;
 	font-size: 30px;
   font-weight: 300;
 	letter-spacing: 2px;
@@ -720,7 +742,7 @@ header{
   transition: all 1s ease-in-out;
 }
 
-@keyframes vibrate-large{
+/*@keyframes vibrate-large{
 	0%{transform:translate(1px,0);}
 	5%{transform:translate(-1px,0);}
 	10%{transform:translate(2px,0);}
@@ -834,7 +856,7 @@ header{
 	90%{transform:translate(2px,0);}
 	95%{transform:translate(-2px,0);}
 	100%{transform:translate(1px,0);}
-}
+}*/
 
 @keyframes zoom {
   0%{transform:scale(1);}

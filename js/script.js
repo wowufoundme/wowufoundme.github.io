@@ -38,13 +38,15 @@ $(document).ready(function(){
   });
   var navCol = 0;
   $('#nav-collapse').click(function(){
+    $('div.bt-menu').toggleClass("change");
     if(!navCol)
     {
-      $('nav').css("margin-top","0px");
+      $('nav').css("transform","perspective(500px) rotateX(0)");
+
       navCol=1;
     }
     else{
-      $('nav').css("margin-top","-100px");
+      $('nav').css("transform","perspective(500px) rotateX(90deg)");
       navCol=0;
     }
   });
