@@ -36,6 +36,18 @@ $(document).ready(function(){
     event.preventDefault();
     $('html, body').animate({scrollTop: 600}, 500);
   });
+  var navCol = 0;
+  $('#nav-collapse').click(function(){
+    if(!navCol)
+    {
+      $('nav').css("margin-top","0px");
+      navCol=1;
+    }
+    else{
+      $('nav').css("margin-top","-100px");
+      navCol=0;
+    }
+  });
 });
 
 var scrollValue = scrollTop();
