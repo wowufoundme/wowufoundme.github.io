@@ -515,14 +515,9 @@ body{
     transition: 0.4s;
 }
 
-.change .bar1 {
-  width: 8px;
-}
-
-.change .bar2 {width: 16px;}
-.change .bar3 {
-  width: 24px;
-}
+.change .bar1 {width: 9px;}
+.change .bar2 {width: 18px;}
+.change .bar3 {width: 27px;}
 
 nav {
   color: #fff;
@@ -587,12 +582,6 @@ nav li:hover{
 	text-align: center;
   background-color: #6715E0;
   transition: all 100ms linear;
-  //transform-style: preserve-3d;
-  /*background: linear-gradient(90deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/wall.svg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;*/
 }
 
 .header--container--width--def{

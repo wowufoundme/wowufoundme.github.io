@@ -34,7 +34,7 @@ $(window).scroll(function() {
 $(document).ready(function(){
   $('#move-down').click(function(event){
     event.preventDefault();
-    $('html, body').animate({scrollTop: 600}, 500);
+    $('html, body').animate({scrollTop: 650}, 500);
   });
   var navCol = 0;
   $('#nav-collapse').click(function(){
