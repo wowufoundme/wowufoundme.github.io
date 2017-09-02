@@ -573,7 +573,7 @@ nav li:hover {
     text-align: center;
     z-index: -1;
     //background: linear-gradient(135deg, #00c3cc, #7C1BE8);
-    background:  linear-gradient(135deg, rgba(0, 195, 204, 0), rgba(124, 27, 232, 1)), url(img/comp-1.jpg);
+    background:  linear-gradient(135deg, rgba(0, 195, 204, 0), rgba(124, 27, 232, 1)), url(img/comp-2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -615,9 +615,10 @@ nav li:hover {
     height: 150px;
     margin-top: 100px;
     padding-bottom: 20px;
-    font-size: 60px;
+    font-size: 72px;
     font-weight: 200;
     color: #fff;
+    background-color: rgba(0 ,0 ,0 , 0.6);
 }
 .main--title:hover {
     animation: vibrate-large 500ms linear 1;
