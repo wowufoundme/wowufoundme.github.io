@@ -1,13 +1,9 @@
 $(window).load(function(){
   if($(window).scrollTop()>1){
     $("nav").css("height", "50px");
-    $("nav").css("border-bottom", "1px solid #6715E0");
-    $("nav").css("background-color", "#6715E0");
   }
   else{
     $("nav").css("height", "100px");
-    $("nav").css("border-bottom", "1px solid rgba(255,255,255,0)");
-    $("nav").css("background-color", "transparent");
   }
   $(".content--wrapper").css("transform","translate3d(0,0,0)");
   $(".loader").delay(1000).fadeOut("slow");
@@ -16,13 +12,9 @@ $(window).load(function(){
 $(window).scroll(function() {
     if($(window).scrollTop()>20){
       $("nav").css("height", "50px");
-      $("nav").css("border-bottom", "1px solid #6715E0)");
-      $("nav").css("background-color", "#6715E0");
     }
     else{
       $("nav").css("height", "100px");
-      $("nav").css("border-bottom", "1px solid rgba(255,255,255,0)");
-      $("nav").css("background-color", "transparent");
     }
 });
 
@@ -55,5 +47,3 @@ $(document).ready(function(){
     }
   });
 });
-
-var scrollValue = scrollTop();
