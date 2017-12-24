@@ -5,7 +5,7 @@
   text-rendering: optimizeLegibility; }
 
 body {
-  font: 400 16px/24px 'Open Sans','Helvetica Neue','Arial',sans-serif;
+  font: 400 16px/24px 'Fira Sans','Helvetica Neue','Arial',sans-serif;
   height: 100%;
   background-image: url("../assets/background.svg");
   background-attachment: fixed; }
@@ -125,8 +125,7 @@ div#s-icon:nth-of-type(5) {
   .masthead .masthead-description {
     margin-top: 1.2rem;
     font-size: 1.3rem;
-    line-height: 1.8;
-    font-family: 'Scope One', Cambria, Cochin, Georgia, Times, Times New Roman, serif; }
+    line-height: 1.8;}
     .masthead .masthead-description p {
       padding-top: 8px; }
 
@@ -170,14 +169,12 @@ div#s-icon:nth-of-type(5) {
   .work-section .work-row .img-cont {
     border-radius: 10px; }
   .work-section .work-row .w-content {
-    font-family: 'Scope One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
     padding: 2rem; }
     .work-section .work-row .w-content span.p-heading {
       display: inline-block;
       position: relative;
-      font-family: 'Open Sans';
       margin-bottom: 20px; }
       .work-section .work-row .w-content span.p-heading:after {
         content: '';
@@ -198,7 +195,6 @@ div#s-icon:nth-of-type(5) {
   position: relative;
   margin: 1rem auto; }
   .tools .tl-heading {
-    font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;
     color: #999;
     font-size: 0.8rem;
     letter-spacing: 2px;
