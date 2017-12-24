@@ -113,21 +113,21 @@ div#s-icon:nth-of-type(5) {
   color: #333;
   padding-top: 2rem;
   width: 100%; }
-  .masthead .mh-heading {
+  .masthead .masthead-heading {
     font-size: 2.4rem;
     line-height: 1.2em; }
-  .masthead .mh-shorthand {
+  .masthead .masthead-shorthand {
     margin: 1.2rem auto;
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     word-spacing: 2px; }
-  .masthead .mh-description {
+  .masthead .masthead-description {
     margin-top: 1.2rem;
     font-size: 1.3rem;
     line-height: 1.8;
     font-family: 'Scope One', Cambria, Cochin, Georgia, Times, Times New Roman, serif; }
-    .masthead .mh-description p {
+    .masthead .masthead-description p {
       padding-top: 8px; }
 
 /*
@@ -190,7 +190,7 @@ div#s-icon:nth-of-type(5) {
         width: 50px;
         transition: all .5s ease; }
 
-.mh-heading-md {
+.masthead-heading-md {
   font-size: 1.6rem; }
 
 .tools {
@@ -266,9 +266,9 @@ div#s-icon:nth-of-type(5) {
 
   .masthead {
     width: 95%; }
-    .masthead .mh-heading {
+    .masthead .masthead-heading {
       font-size: 2rem; }
-    .masthead .mh-description {
+    .masthead .masthead-description {
       font-size: 1.1rem; }
 
   .tools .tl-io {

@@ -143,18 +143,18 @@ div#s-icon:nth-of-type(5){
     color: #333;
     padding-top: 2rem;
     width: 100%;
-    .mh-heading{
+    .masthead-heading{
         font-size: 2.4rem;
         line-height: 1.2em;
     }
-    .mh-shorthand{
+    .masthead-shorthand{
         margin: 1.2rem auto;
         font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 4px;
         word-spacing: 2px;
     }
-    .mh-description{
+    .masthead-description{
         margin-top: 1.2rem;
         font-size: 1.3rem;
         line-height: 1.8;
@@ -247,7 +247,7 @@ div#s-icon:nth-of-type(5){
     }
 }
 
-.mh-heading-md{
+.masthead-heading-md{
     font-size: 1.6rem;
 }
 
@@ -343,10 +343,10 @@ div#s-icon:nth-of-type(5){
     }
     .masthead {
         width: 95%;
-        .mh-heading{
+        .masthead-heading{
             font-size: 2rem;
         }
-        .mh-description{
+        .masthead-description{
             font-size: 1.1rem;
         }
     }
