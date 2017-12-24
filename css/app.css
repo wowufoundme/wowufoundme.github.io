@@ -5,9 +5,10 @@
   text-rendering: optimizeLegibility; }
 
 body {
-  font: 400 16px/24px 'Fira Sans','Helvetica Neue','Arial',sans-serif;
+  font: 400 16px/24px "Roboto", "Helvetica Neue", "Arial", sans-serif;
   height: 100%;
-  background-color: #ececec; }
+  background-color: #ECECEC;
+  color: #141414; }
 
 a {
   color: inherit;
@@ -31,8 +32,10 @@ a {
 .wrapper {
   max-width: 920px;
   margin: 0 auto;
-  padding: 0 0 2rem 0;
-  height: 100%; }
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+  height: 100%;
+  border-bottom: thin solid rgba(0, 0, 0, 0.1); }
 
 .nav-container {
   max-width: 920px;
@@ -41,7 +44,6 @@ a {
   .nav-container .navigation {
     width: 100%;
     padding: 20px 0;
-    color: rgba(0, 0, 0, 0.6);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     .nav-container .navigation .nav-item {
@@ -58,7 +60,7 @@ a {
         .nav-container .navigation .nav-item li a.icon-lg {
           font-size: 1rem; }
         .nav-container .navigation .nav-item li:hover {
-          color: #333; }
+          color: #22A7F0; }
     .nav-container .navigation div.icon-hidden {
       transform: translateY(-20px);
       opacity: 0; }
@@ -109,7 +111,6 @@ div#s-icon:nth-of-type(5) {
 ---------------------------------------------------------------------------------
 */
 .masthead {
-  color: #333;
   padding-top: 2rem;
   width: 100%; }
   .masthead .masthead-heading {
@@ -124,7 +125,8 @@ div#s-icon:nth-of-type(5) {
   .masthead .masthead-description {
     margin-top: 1.2rem;
     font-size: 1.3rem;
-    line-height: 1.8;}
+    line-height: 1.8;
+    font-family: "Fira Sans"; }
     .masthead .masthead-description p {
       padding-top: 8px; }
 
@@ -133,58 +135,41 @@ div#s-icon:nth-of-type(5) {
     Work Content
 ---------------------------------------------------------------------------------
 */
-.work-section .work-row {
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  position: relative;
-  transition: all 0.2s ease;
-  border: 1px solid transparent; }
-  .work-section .work-row:hover {
-    border: 1px solid #000;
-    background: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
-    .work-section .work-row:hover .w-content span.p-heading:after {
-      width: 75px; }
-    .work-section .work-row:hover .view-project {
-      display: inline-block; }
-    @media all and (max-width: 550px) {
-      .work-section .work-row:hover .view-project {
-        display: none; } }
-  .work-section .work-row .view-project {
-    display: none;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    transition: all .2s ease; }
-  .work-section .work-row .w-col {
-    padding: 0.5rem;
-    width: 50%;
-    height: inherit; }
-  .work-section .work-row .col-l {
-    float: left; }
-  .work-section .work-row .col-r {
-    float: right; }
-  .work-section .work-row .img-cont {
-    border-radius: 10px; }
-  .work-section .work-row .w-content {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    padding: 2rem; }
-    .work-section .work-row .w-content span.p-heading {
-      display: inline-block;
-      position: relative;
-      margin-bottom: 20px; }
-      .work-section .work-row .w-content span.p-heading:after {
-        content: '';
-        position: absolute;
-        height: 5px;
-        background-color: #000;
+.work-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .work-section .work-row {
+    height: 100%;
+    display: block;
+    transition: all 0.2s ease;
+    margin: .25rem 0;
+    border: 1px solid transparent; }
+    .work-section .work-row .view-project {
+      display: none;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      transition: all .2s ease; }
+    .work-section .work-row .w-col {
+      padding: 0.5rem;
+      width: 50%;
+      height: inherit; }
+    .work-section .work-row .col-l {
+      float: left; }
+    .work-section .work-row .col-r {
+      float: right; }
+    .work-section .work-row .img-cont {
+      border-radius: 10px; }
+    .work-section .work-row .w-content {
+      font-size: 1.2rem;
+      line-height: 1.5; }
+      .work-section .work-row .w-content span.p-heading {
         display: inline-block;
-        bottom: -10px;
-        left: 0;
-        width: 50px;
-        transition: all .5s ease; }
+        position: relative;
+        font-family: "Fira Sans"; }
+        .work-section .work-row .w-content span.p-heading:hover {
+          color: #22A7F0; }
 
 .masthead-heading-md {
   font-size: 1.6rem; }
@@ -194,15 +179,17 @@ div#s-icon:nth-of-type(5) {
   position: relative;
   margin: 1rem auto; }
   .tools .tl-heading {
-    color: #999;
+    font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;
+    color: black;
     font-size: 0.8rem;
     letter-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase; }
   .tools .tl-io {
     text-align: center;
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     display: inline-block;
     position: relative;
     margin: 1rem;
@@ -211,10 +198,9 @@ div#s-icon:nth-of-type(5) {
     transition: all .2s ease; }
     .tools .tl-io:hover {
       border: 1px solid #222;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      background-color: #fff; }
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); }
     .tools .tl-io .icon-xl {
-      font-size: 4rem; }
+      font-size: 2.4rem; }
   .tools .ixfit {
     background-size: 75%;
     background-position: center;
@@ -250,8 +236,9 @@ div#s-icon:nth-of-type(5) {
     display: none; }
 
   .tools .tl-io {
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     margin: 1rem 0.3rem; }
     .tools .tl-io .icon-xl {
       font-size: 3rem; } }
@@ -262,26 +249,24 @@ div#s-icon:nth-of-type(5) {
   .masthead {
     width: 95%; }
     .masthead .masthead-heading {
-      font-size: 2rem; }
+      font-size: 1.4rem;
+      line-height: 2rem; }
     .masthead .masthead-description {
-      font-size: 1.1rem; }
+      font-size: .9rem;
+      line-height: 2rem; }
 
   .tools .tl-io {
     width: 50px;
     height: 50px;
+    line-height: 50px;
     margin: 1rem 0.3rem; }
     .tools .tl-io .icon-xl {
-      font-size: 2rem; }
+      font-size: 1.8rem; }
 
   .work-section .work-row {
     display: block; }
-    .work-section .work-row:hover {
-      background: transparent;
-      border: 1px solid transparent;
-      box-shadow: none; }
     .work-section .work-row .w-content {
-      font-size: 1.1rem;
-      padding: 1rem; } }
+      font-size: 1.1rem; } }
 @media all and (max-width: 480px) {
   .masthead {
     width: 100%; }

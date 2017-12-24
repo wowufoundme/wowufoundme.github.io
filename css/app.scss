@@ -5,6 +5,23 @@ $vscode-img: '../assets/vsc-2.png';
 $prepros-img: '../assets/prepros.png';
 $firefox-img: '../assets/firefox.png';
 
+$primary-color: #ECECEC;
+$secondary-color: #22A7F0;
+
+$wall: '../assets/wall.min.jpg';
+
+$text-color: #141414;
+$amount: 20%;
+
+$img-size-large: 60px;
+$img-size-small: 55px;
+$img-size-very-small: 50px;
+
+$primary-font-family: 'Roboto';
+$secondary-font-family: 'Fira Sans';
+
+$border-color: rgba(0,0,0,.1);
+
 * {
     margin: 0;
     padding: 0;
@@ -13,11 +30,10 @@ $firefox-img: '../assets/firefox.png';
 }
 
 body{
-    font: 400 16px/24px 'Open Sans','Helvetica Neue','Arial',sans-serif;
+    font: 400 16px/24px $primary-font-family,'Helvetica Neue','Arial',sans-serif;
     height: 100%;
-    //background-color: $p-c;
-    background-image: url('../assets/background.svg');
-    background-attachment: fixed;
+    background-color: $primary-color;
+    color: $text-color;
 }
 
 a{
@@ -46,8 +62,10 @@ a{
 .wrapper{
     max-width: 920px;
     margin: 0 auto;
-    padding: 0 0 2rem 0;
+    margin-bottom: 6rem;
+    padding-bottom: 2rem;
     height: 100%;
+    border-bottom: thin solid $border-color; 
 }
 
 .nav-container{
@@ -57,9 +75,8 @@ a{
     .navigation{
         width: 100%;
         padding: 20px 0;
-        color: rgba(0,0,0,0.6);
-        border-top: 1px solid rgba(0,0,0,0.1);
-        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
         .nav-item{
             display: inline-block;
             vertical-align: middle;
@@ -75,7 +92,7 @@ a{
                     font-size: 1rem;
                 }
                 &:hover{
-                    color: #333;
+                    color: $secondary-color;
                 }
             }
         }
@@ -140,7 +157,6 @@ div#s-icon:nth-of-type(5){
 */
 
 .masthead{
-    color: #333;
     padding-top: 2rem;
     width: 100%;
     .masthead-heading{
@@ -158,7 +174,7 @@ div#s-icon:nth-of-type(5){
         margin-top: 1.2rem;
         font-size: 1.3rem;
         line-height: 1.8;
-        font-family: 'Scope One', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        font-family: $secondary-font-family;
         p{
             padding-top: 8px;
         }
@@ -172,33 +188,15 @@ div#s-icon:nth-of-type(5){
 */
 
 .work-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     .work-row{
-        width: 100%;
         height: 100%;
-        display: inline-block;
-        position: relative;
+        display: block;
         transition: all 0.2s ease;
+        margin: .25rem 0;
         border: 1px solid transparent;
-        &:hover{
-            border: 1px solid #000;
-            background: #ffffff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            .w-content{
-                span.p-heading{
-                    &:after{
-                        width: 75px;
-                    }
-                }
-            }
-            .view-project{
-                display: inline-block;
-            }
-            @media all and (max-width: 550px){
-                .view-project{
-                    display: none;
-                }
-            }
-        }
         .view-project{
             display: none;
             position: absolute;
@@ -221,28 +219,16 @@ div#s-icon:nth-of-type(5){
             border-radius: 10px;
         }
         .w-content{
-            font-family: 'Scope One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 1.2rem;
             line-height: 1.5;
-            padding: 2rem;
             span.p-heading{
                 display: inline-block;
                 position: relative;
-                font-family: 'Open Sans';
-                margin-bottom: 20px;
-                &:after{
-                    content:'';
-                    position: absolute;
-                    height: 5px;
-                    background-color: #000;
-                    display: inline-block;
-                    bottom: -10px;
-                    left: 0;
-                    width: 50px;
-                    transition: all .5s ease;
+                font-family: $secondary-font-family;
+                &:hover {
+                    color: #22A7F0;
                 }
             }
-
         }
     }
 }
@@ -257,7 +243,7 @@ div#s-icon:nth-of-type(5){
     margin: 1rem auto;
     .tl-heading{
         font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;   
-        color: #999;
+        color: darken($text-color,$amount);
         font-size: 0.8rem;
         letter-spacing: 2px;
         font-weight: 600;
@@ -265,8 +251,9 @@ div#s-icon:nth-of-type(5){
     }
     .tl-io{
         text-align: center;
-        width: 100px;
-        height: 100px;
+        width: $img-size-large;
+        height: $img-size-large;
+        line-height: $img-size-large;
         display: inline-block;
         position: relative;
         margin: 1rem;
@@ -275,11 +262,10 @@ div#s-icon:nth-of-type(5){
         transition: all .2s ease;
         &:hover{
             border: 1px solid #222;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            background-color: #fff;
+            box-shadow: 0 0 10px rgba(255,255,255,.5);
         }        
         .icon-xl{
-            font-size: 4rem;
+            font-size: 2.4rem;
         }
     }
     .ixfit{
@@ -327,8 +313,9 @@ div#s-icon:nth-of-type(5){
     }
     .tools{
         .tl-io{
-            width: 80px;
-            height: 80px;
+            width: $img-size-small;
+            height: $img-size-small;
+            line-height: $img-size-small;
             margin: 1rem 0.3rem;
             .icon-xl{
                 font-size: 3rem;
@@ -344,33 +331,30 @@ div#s-icon:nth-of-type(5){
     .masthead {
         width: 95%;
         .masthead-heading{
-            font-size: 2rem;
+            font-size: 1.4rem;
+            line-height: 2rem;
         }
         .masthead-description{
-            font-size: 1.1rem;
+            font-size: .9rem;
+            line-height: 2rem;
         }
     }
     .tools{
         .tl-io{
-            width: 50px;
-            height: 50px;
+            width: $img-size-very-small;
+            height: $img-size-very-small;
+            line-height: $img-size-very-small;
             margin: 1rem 0.3rem;
             .icon-xl{
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
     }
     .work-section{
         .work-row{
             display: block;
-            &:hover{
-                background: transparent;
-                border: 1px solid transparent;
-                box-shadow: none;
-            }
             .w-content{
                 font-size: 1.1rem;
-                padding: 1rem;
             }
         }
     }
