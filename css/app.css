@@ -1,8 +1,16 @@
+/*
+ *      Compilation Code
+ *      sass --watch app.scss:app.css
+ */
+/*
+ *  Colors
+ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  transition: all .1s ease; }
 
 body {
   font: 400 16px/24px "Roboto", "Helvetica Neue", "Arial", sans-serif;
@@ -30,12 +38,14 @@ a {
 ---------------------------------------------------------------------------------
 */
 .wrapper {
+  display: none;
   max-width: 920px;
   margin: 0 auto;
   margin-bottom: 6rem;
   padding-bottom: 2rem;
   height: 100%;
-  border-bottom: thin solid rgba(0, 0, 0, 0.1); }
+  border-bottom: thin solid rgba(0, 0, 0, 0.1);
+  transition: none !important; }
 
 .nav-container {
   max-width: 920px;
@@ -180,7 +190,7 @@ div#s-icon:nth-of-type(5) {
   margin: 1rem auto; }
   .tools .tl-heading {
     font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;
-    color: black;
+    color: #bfbfbf;
     font-size: 0.8rem;
     letter-spacing: 2px;
     font-weight: 600;

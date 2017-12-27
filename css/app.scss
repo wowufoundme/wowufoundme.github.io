@@ -1,3 +1,8 @@
+/*
+ *      Compilation Code
+ *      sass --watch app.scss:app.css
+ */
+
 $bootstrap-img: '../assets/bootstrap.png';
 $foundation-img: '../assets/foundation.png';
 $nucleon-img: '../assets/nucleon.png';
@@ -5,13 +10,19 @@ $vscode-img: '../assets/vsc-2.png';
 $prepros-img: '../assets/prepros.png';
 $firefox-img: '../assets/firefox.png';
 
+/*
+ *  Colors
+ */
+
+$nice-blue: #5D83FA;
+
 $primary-color: #ECECEC;
 $secondary-color: #22A7F0;
 
 $wall: '../assets/wall.min.jpg';
 
-$text-color: #141414;
-$amount: 20%;
+$text-color: #fff;
+$amount: 25%;
 
 $img-size-large: 60px;
 $img-size-small: 55px;
