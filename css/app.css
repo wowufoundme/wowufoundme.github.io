@@ -9,13 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  transition: all .1s ease; }
+  text-rendering: optimizeLegibility; }
 
 body {
   font: 400 16px/24px "Roboto", "Helvetica Neue", "Arial", sans-serif;
   height: 100%;
-  background-color: #ECECEC;
+  background-color: #EEEEEE;
   color: #141414; }
 
 a {
@@ -38,14 +37,12 @@ a {
 ---------------------------------------------------------------------------------
 */
 .wrapper {
-  display: none;
   max-width: 920px;
   margin: 0 auto;
   margin-bottom: 6rem;
   padding-bottom: 2rem;
   height: 100%;
-  border-bottom: thin solid rgba(0, 0, 0, 0.1);
-  transition: none !important; }
+  border-bottom: thin solid rgba(0, 0, 0, 0.1); }
 
 .nav-container {
   max-width: 920px;
@@ -66,11 +63,12 @@ a {
         font-size: 0.7rem;
         letter-spacing: 2px;
         font-weight: 600;
-        margin-right: 15px; }
+        margin-right: 15px;
+        color: #545454; }
         .nav-container .navigation .nav-item li a.icon-lg {
           font-size: 1rem; }
         .nav-container .navigation .nav-item li:hover {
-          color: #22A7F0; }
+          color: #141414; }
     .nav-container .navigation div.icon-hidden {
       transform: translateY(-20px);
       opacity: 0; }
@@ -177,9 +175,10 @@ div#s-icon:nth-of-type(6) {
       .work-section .work-row .w-content span.p-heading {
         display: inline-block;
         position: relative;
-        font-family: "Fira Sans"; }
+        font-family: "Fira Sans";
+        color: #545454; }
         .work-section .work-row .w-content span.p-heading:hover {
-          color: #22A7F0; }
+          color: #141414; }
 
 .masthead-heading-md {
   font-size: 1.6rem; }
@@ -190,7 +189,7 @@ div#s-icon:nth-of-type(6) {
   margin: 1rem auto; }
   .tools .tl-heading {
     font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;
-    color: #bfbfbf;
+    color: black;
     font-size: 0.8rem;
     letter-spacing: 2px;
     font-weight: 600;

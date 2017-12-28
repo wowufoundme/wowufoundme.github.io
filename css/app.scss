@@ -16,12 +16,12 @@ $firefox-img: '../assets/firefox.png';
 
 $nice-blue: #5D83FA;
 
-$primary-color: #ECECEC;
+$primary-color: #EEEEEE;
 $secondary-color: #22A7F0;
 
 $wall: '../assets/wall.min.jpg';
 
-$text-color: #fff;
+$text-color: #141414;
 $amount: 25%;
 
 $img-size-large: 60px;
@@ -76,7 +76,7 @@ a{
     margin-bottom: 6rem;
     padding-bottom: 2rem;
     height: 100%;
-    border-bottom: thin solid $border-color; 
+    border-bottom: thin solid $border-color;
 }
 
 .nav-container{
@@ -97,13 +97,14 @@ a{
                 display: inline;
                 font-size: 0.7rem;
                 letter-spacing: 2px;
-                font-weight: 600;  
+                font-weight: 600;
                 margin-right: 15px;
+                color: lighten($text-color, $amount);
                 a.icon-lg{
                     font-size: 1rem;
                 }
                 &:hover{
-                    color: $secondary-color;
+                    color: $text-color;
                 }
             }
         }
@@ -126,16 +127,16 @@ div#s-icon{
     transition: all 0.2s ease;
 }
 
-div#s-icon:nth-of-type(2){
+div#s-icon:nth-of-type(3){
     transition-delay: 0s;
 }
-div#s-icon:nth-of-type(3){
+div#s-icon:nth-of-type(4){
     transition-delay: .15s;
 }
-div#s-icon:nth-of-type(4){
+div#s-icon:nth-of-type(5){
     transition-delay: .3s;
 }
-div#s-icon:nth-of-type(5){
+div#s-icon:nth-of-type(6){
     transition-delay: .45s;
 }
 
@@ -236,8 +237,9 @@ div#s-icon:nth-of-type(5){
                 display: inline-block;
                 position: relative;
                 font-family: $secondary-font-family;
+                color: lighten($text-color, $amount);
                 &:hover {
-                    color: #22A7F0;
+                    color: $text-color;
                 }
             }
         }
@@ -253,7 +255,7 @@ div#s-icon:nth-of-type(5){
     position: relative;
     margin: 1rem auto;
     .tl-heading{
-        font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;   
+        font-family: 'Open Sans','Helvetica','HelveticaNeue','Helvetica Neue', 'Arial', sans-serif;
         color: darken($text-color,$amount);
         font-size: 0.8rem;
         letter-spacing: 2px;
@@ -274,7 +276,7 @@ div#s-icon:nth-of-type(5){
         &:hover{
             border: 1px solid #222;
             box-shadow: 0 0 10px rgba(255,255,255,.5);
-        }        
+        }
         .icon-xl{
             font-size: 2.4rem;
         }
@@ -307,10 +309,10 @@ div#s-icon:nth-of-type(5){
 
 
 @media (max-width: 1024px){
-    .wrapper{ 
+    .wrapper{
         width: 90%;
         margin-top: 2rem;
-        margin-bottom: 1rem; 
+        margin-bottom: 1rem;
     }
     .w-col{
         width: 100%;
