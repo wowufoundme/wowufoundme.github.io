@@ -63,9 +63,9 @@
          height="16.511446"
          width="25.771862"
          id="rect10"
-         style="fill:#155bfb;fill-opacity:1;stroke:#155bfb;stroke-width:3.33230376;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#161616;fill-opacity:1;stroke:#155bfb;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <rect
-         style="fill:#155bfb;fill-opacity:1;stroke:#155bfb;stroke-width:4.61495543;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="fill:#161616;fill-opacity:1;stroke:#155bfb;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="rect12"
          width="53.593376"
          height="15.228795"
@@ -77,7 +77,7 @@
          height="14.316231"
          width="81.784981"
          id="rect14"
-         style="fill:#155bfb;fill-opacity:1;stroke:#155bfb;stroke-width:5.52751923;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#161616;fill-opacity:1;stroke:#155bfb;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
