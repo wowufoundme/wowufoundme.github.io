@@ -1,0 +1,50 @@
+--------------------
+COVER
+--------------------
+<div class="container main">
+    <div class="intro-container">
+        <div class="cover--1"></div>
+        <div class="cover--2"></div>
+    </div>
+</div>
+
+
+--------------------
+MASTHEAD
+--------------------
+<div class="container agendas">
+    <div class="card-container">
+        <div class="card card-light">
+            <div class="card-heading">
+                I am Shubhkirti
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container masthead">
+  <div class="masthead__date">24<sup>th</sup>-25<sup>th</sup>&nbsp;March'18</div>
+</div>
+
+
+--------------------
+NAVIGATION
+--------------------
+<div class="nav nav-container" id="nav">
+    <div class="logo"></div>
+    <div class="navigation">
+        <div class="nav-item"><a href="/index.html">Home</a></div>
+        <div class="nav-item"><a href="#">Social</a></div>
+        <div class="nav-item"><a href="#">LinkedIN</a></div>
+        <div class="nav-item"><a href="#">Contact</a></div>
+    </div>
+</div>
+
+
+--------------------
+TOGGLE
+--------------------
+<div class="nav-toggle-container">
+    <div class="toggle" id="toggle">
+        <span></span>
+    </div>
+</div>
