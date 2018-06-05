@@ -4,10 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="author" content="Shubhkirti Sharma">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Shubhkirti Sharma &mdash; Frontend Web Design &amp; UI Design</title>
-    <link href="compiled/styles.css" rel="stylesheet" media="all">
+    <meta name="description" content="Portfolio of Shubhkirti Sharma - UI/UX Designer and Fron-End Developer.">
+    <meta name="author" content="Shubhkirti Sharma">
+    <title>Shubhkirti Sharma - Freelance UI/UX Designer &amp; Front-End Developer</title>
+    
+    <link href="compiled/app.css" rel="stylesheet" media="all">
+    
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
@@ -32,6 +35,8 @@
       ga('send', 'pageview');
     </script>
 
+    <script src="compiled/app.js"></script>
+
     <!--Fallback for IE-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,32 +47,37 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="title-container">
-            <div class="title">
-                <span>Shubhkirti</span>&nbsp;Sharma
-            </div>
-        </div>
-        <div class="container x-codes">
-            <div class="x-code_wall">
-                <div class="hero-description">
-                    <ul>
-                        <li>Code <span class="invert">⌨</span> &middot; Coffee &middot; Music</li>
-                        <li>Web/UI/UX Design <span class="invert">(❂‿❂)</span></li>
-                        <li><a href="/work" class="highlight">Work →&nbsp;</a></li>
-                        <li><a href="/about" class="highlight">About Me →&nbsp;</a></li>
-                        <li><a href="https://twitter.com/__shubhkirti__" class="highlight">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/shubhkirtisharma/" class="highlight">Instagram</a></li>
-                        <li><a href="https://github.com/wowufoundme" class="highlight">Github</a></li>
-                        <li><a href="mailto:shubhkirti.work@gmail.com" class="highlight">shubhkirti[dot]work[at]gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="particles-js"></div>
-    <script src="compiled/particles.js"></script>
-    <script src="compiled/script.js"></script>
+  <div class="container">
+    <header>
+      <nav class="cf header__nav hide">
+        <ul class="nav">
+          <li><a href="#">Work</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero"></div>
+    </header>
+    <section class="about">
+      <h1 class="h1 fw4">UI/UX Designer and Front-End Developer</h1>
+      <p class="intro fw4">Hi &mdash; I am Shubh. 
+      I am a freelance designer and developer creating neat and beautiful interfaces for users to indulge in.
+      I believe in writing clean, semantic yet effective code. I am also a Machine Learning enthusiast.
+      Currently, I am accepting small projects. Got one on mind! Say Hi!
+      </p>
+    </section>
+    <footer class="cf">
+      <ul class="social">
+        <li><a href="https://twitter.com/__shubhkirti__">Twitter</a></li>
+        <li><a href="https://www.behance.net/shubhkirtifaa4">Behance</a></li>
+        <li><a href="mailto:shubhkirti.work@gmail.com">Mail</a></li>
+      </ul>
+      <div class="made__with__love">
+        Made with <span>&#9829;</span> 
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>
