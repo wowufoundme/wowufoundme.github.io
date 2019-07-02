@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url("../fonts/SFProDisplay-Regular.ttf"); }
 ::selection {
   color: #101010;
   background-color: #FFFFFF; }
