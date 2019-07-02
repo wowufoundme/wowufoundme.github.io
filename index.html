@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Portfolio of Shubhkirti Sharma - UI/UX Designer and Fron-End Developer.">
     <meta name="author" content="Shubhkirti Sharma">
-    <title>Shubhkirti Sharma - Freelance UI/UX Designer &amp; Front-End Developer</title>
+    <title>Shubhkirti Sharma</title>
     
-    <link href="compiled/app.css" rel="stylesheet" media="all">
+    <link href="./compiled/app.css" rel="stylesheet" media="all">
     
     <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
@@ -35,8 +35,6 @@
       ga('send', 'pageview');
     </script>
 
-    <script src="compiled/app.js"></script>
-
     <!--Fallback for IE-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,16 +42,32 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
 </head>
 
 <body>
+  <div id="particles-js"></div>
   <div class="container">
     <div class="sub-container cf">
       <div class="say-hello">
         Hello.
       </div>
       <div class="introduce">
-        From the land of culture and diversity(India), I am a full stack developer and creative designer based in <strike>New Delhi</strike> &RightArrow; Chandigarh, most probably sleeping at this moment.
+        I am Shubhkirti, a 
+        <span class="green-text">
+          <span id="ghost" class="typed"></span>
+        </span><br>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="./compiled/ghost-typer.js"></script>
+        <script>
+          $("#ghost").ghosttyper({
+            messages: ['front-end developer', 'graphic designer', 'android rom developer','coffee lover'],
+            timeWrite: 60,
+            timeDelete: 50,
+            timePause: 500
+          });
+        </script>
+        based in <strike>New Delhi</strike> &RightArrow; Chandigarh, most probably sleeping at this moment.
         Find me doing something on one of these sites or drop me a mail.<br> ¯\_(ツ)_/¯
         <ul class="network">
           <li><a href="https://github.com/wowufoundme" class="link">Github</a></li>
@@ -67,6 +81,9 @@
       </div>
     </div>
   </div>
+  <script src="./compiled/ghost-typer.js"></script>
+  <script src="./compiled/particle.min.js"></script>
+  <script src="./compiled/app.js"></script>
 </body>
 
 </html>

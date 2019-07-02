@@ -27,6 +27,11 @@ $lg-screen: 960px;
   }
 }
 
+::selection {
+  color: $black;
+  background-color: $white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -38,6 +43,11 @@ $lg-screen: 960px;
   -webkit-sont-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -60,31 +70,63 @@ body {
   font: normal 16px/24px $primary-font;
   background-color: $black;
   color: $offwhite;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#particles-js {
+  width: 100%;
+  height: 99vh;
+  position: fixed;
+}
+
+.green-text {
+  color: $green;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
 
   .sub-container {
     width: 50%;
     padding: 6rem;
-    
+      @include responsive(phones) {
+      width: 100%;
+      padding: 4rem 2rem 1rem 2rem;
+    }
+  
     .say-hello {
       font-size: 8rem;
+      @include responsive(phones) {
+        font-size: 4rem;
+      }
     }
     .introduce {
       font-size: 2rem;
       line-height: 125%;
       padding-top: 6rem;
+      @include responsive(phones) {
+        font-size: 1.6rem;
+        padding-top: 2rem;
+      }
 
       .network {
         list-style: none;
         padding-top: 1rem;
+
+        li {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+
+        .link:hover {
+          padding: 4px;
+          color: $black;
+          background-color: $green;
+        }
       }
     }
   }

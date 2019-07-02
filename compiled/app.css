@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+::selection {
+  color: #101010;
+  background-color: #FFFFFF; }
+
 * {
   padding: 0;
   margin: 0;
@@ -10,6 +14,10 @@
   -webkit-sont-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   box-sizing: border-box; }
+
+html {
+  height: 100%;
+  width: 100%; }
 
 a {
   color: inherit;
@@ -28,26 +36,52 @@ body {
   font: normal 16px/24px "SF Pro Display", "Helvetica", "Helvetica Neue", "Arial", sans-serif;
   background-color: #101010;
   color: #DDDDDD;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  width: 100%;
+  height: 100%; }
+
+#particles-js {
+  width: 100%;
+  height: 99vh;
+  position: fixed; }
+
+.green-text {
+  color: #C0FF00; }
 
 .container {
-  display: flex;
-  flex-direction: row; }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
   .container .sub-container {
     width: 50%;
     padding: 6rem; }
+    @media all and (min-width: 1px) and (max-width: 720px) {
+      .container .sub-container {
+        width: 100%;
+        padding: 4rem 2rem 1rem 2rem; } }
     .container .sub-container .say-hello {
       font-size: 8rem; }
+      @media all and (min-width: 1px) and (max-width: 720px) {
+        .container .sub-container .say-hello {
+          font-size: 4rem; } }
     .container .sub-container .introduce {
       font-size: 2rem;
       line-height: 125%;
       padding-top: 6rem; }
+      @media all and (min-width: 1px) and (max-width: 720px) {
+        .container .sub-container .introduce {
+          font-size: 1.6rem;
+          padding-top: 2rem; } }
       .container .sub-container .introduce .network {
         list-style: none;
         padding-top: 1rem; }
+        .container .sub-container .introduce .network li {
+          margin-top: 5px;
+          margin-bottom: 5px; }
+        .container .sub-container .introduce .network .link:hover {
+          padding: 4px;
+          color: #101010;
+          background-color: #C0FF00; }
 
 /*----------extras--------*/
 .hide {
