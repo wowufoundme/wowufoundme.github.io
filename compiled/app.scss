@@ -1,3 +1,9 @@
+// Font Family
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Regular.ttf');
+}
+
 //Variables
 $primary-font:  'SF Pro Display','Helvetica','Helvetica Neue', 'Arial', sans-serif;
 $primary-black: #1E1E1E;
@@ -8,6 +14,7 @@ $blue: #004DFF;
 $white: #FFFFFF;
 $offwhite: #DDDDDD;
 
+// Reponsive Breakpoints
 $sm-screen: 720px;
 $lg-screen: 960px;
 
@@ -23,12 +30,6 @@ $lg-screen: 960px;
       @content;
     }
   }
-}
-
-// Font Family
-@font-face {
-  font-family: 'SF Pro Display';
-  src: url('../fonts/SFProDisplay-Regular.ttf');
 }
 
 ::selection {
