@@ -104,13 +104,13 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: absolute;
   top: 0;
 
   .sub-container {
-    width: 50%;
+    width: 75%;
     padding: 6rem;
       @include responsive(phones) {
       width: 100%;
