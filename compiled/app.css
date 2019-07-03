@@ -19,7 +19,13 @@
   -moz-text-rendering: auto;
   -webkit-sont-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  outline: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
 
 html {
   height: 100%;
@@ -50,8 +56,10 @@ body {
   height: 99vh;
   position: fixed; }
 
-.green-text {
-  color: #C0FF00; }
+.typed {
+  color: #C0FF00;
+  background-color: #000000;
+  padding: 0 5px; }
 
 .container {
   width: 100%;
@@ -65,15 +73,22 @@ body {
       .container .sub-container {
         width: 100%;
         padding: 4rem 2rem 1rem 2rem; } }
+    .container .sub-container .profile-picture {
+      margin-top: 4.2rem;
+      margin-bottom: 1.6rem; }
+    .container .sub-container .image-profile {
+      width: 256px;
+      height: 256px;
+      border-radius: 50%; }
     .container .sub-container .say-hello {
+      display: block;
       font-size: 8rem; }
       @media all and (min-width: 1px) and (max-width: 720px) {
         .container .sub-container .say-hello {
           font-size: 4rem; } }
     .container .sub-container .introduce {
       font-size: 2rem;
-      line-height: 125%;
-      padding-top: 6rem; }
+      line-height: 125%; }
       @media all and (min-width: 1px) and (max-width: 720px) {
         .container .sub-container .introduce {
           font-size: 1.6rem;
@@ -82,12 +97,22 @@ body {
         list-style: none;
         padding-top: 1rem; }
         .container .sub-container .introduce .network li {
-          margin-top: 5px;
-          margin-bottom: 5px; }
+          display: inline; }
+        .container .sub-container .introduce .network .link {
+          padding: 2px 4px; }
         .container .sub-container .introduce .network .link:hover {
-          padding: 4px;
           color: #101010;
           background-color: #C0FF00; }
+
+.change-theme {
+  margin: 8px 0;
+  display: inline-block; }
+  .change-theme #theme {
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: #C0FF00;
+    background-color: #000000; }
 
 /*----------extras--------*/
 .hide {

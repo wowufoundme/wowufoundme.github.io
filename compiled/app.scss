@@ -6,7 +6,7 @@
 
 //Variables
 $primary-font:  'SF Pro Display','Helvetica','Helvetica Neue', 'Arial', sans-serif;
-$primary-black: #1E1E1E;
+$primary-black: #000000;
 $green: #C0FF00;
 $black: #101010;
 $lightblack: #4D4D4D;
@@ -53,6 +53,13 @@ $lg-screen: 960px;
   -webkit-sont-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   box-sizing: border-box;
+  outline: 0;
+}
+
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit; 
 }
 
 html {
@@ -90,8 +97,10 @@ body {
   position: fixed;
 }
 
-.green-text {
+.typed {
   color: $green;
+  background-color: $primary-black;
+  padding: 0 5px;
 }
 
 .container {
@@ -107,8 +116,20 @@ body {
       width: 100%;
       padding: 4rem 2rem 1rem 2rem;
     }
+
+    .profile-picture {
+      margin-top: 4.2rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .image-profile {
+      width: 256px;
+      height: 256px;
+      border-radius: 50%;
+    }
   
     .say-hello {
+      display: block;
       font-size: 8rem;
       @include responsive(phones) {
         font-size: 4rem;
@@ -117,7 +138,6 @@ body {
     .introduce {
       font-size: 2rem;
       line-height: 125%;
-      padding-top: 6rem;
       @include responsive(phones) {
         font-size: 1.6rem;
         padding-top: 2rem;
@@ -128,17 +148,32 @@ body {
         padding-top: 1rem;
 
         li {
-          margin-top: 5px;
-          margin-bottom: 5px;
+          display: inline;
+        }
+
+        .link {
+          padding: 2px 4px;
         }
 
         .link:hover {
-          padding: 4px;
           color: $black;
           background-color: $green;
         }
       }
     }
+  }
+}
+
+.change-theme {
+  margin: 8px 0;
+  display: inline-block;
+
+  #theme {
+    font-size: 1rem;
+    padding: 4px 8px;
+    border-radius: 2px;
+    color: $green;
+    background-color: $primary-black
   }
 }
 
