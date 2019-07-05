@@ -9,7 +9,7 @@ $primary-font:  'SF Pro Display','Helvetica','Helvetica Neue', 'Arial', sans-ser
 $primary-black: #000000;
 $green: #C0FF00;
 $black: #101010;
-$lightblack: #4D4D4D;
+$lightblack: rgb(22, 22, 22);
 $blue: #004DFF;
 $white: #FFFFFF;
 $offwhite: #DDDDDD;
@@ -134,6 +134,11 @@ body {
       line-height: 8rem;
       @include responsive(phones) {
         font-size: 4rem;
+      }
+      .light {
+        color: $lightblack;
+        background-color: $primary-black;
+        padding:0 0 0 10px;
       }
     }
     .introduce {
