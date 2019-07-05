@@ -9,7 +9,7 @@ $primary-font:  'SF Pro Display','Helvetica','Helvetica Neue', 'Arial', sans-ser
 $primary-black: #000000;
 $green: #C0FF00;
 $black: #101010;
-$lightblack: rgb(22, 22, 22);
+$lightblack: rgb(58, 58, 58);
 $blue: #004DFF;
 $white: #FFFFFF;
 $offwhite: #DDDDDD;
@@ -111,10 +111,10 @@ body {
 
   .sub-container {
     width: 75%;
-    padding: 6rem;
+    padding: 5rem 6rem;
       @include responsive(phones) {
       width: 100%;
-      padding: 4rem 2rem 1rem 2rem;
+      padding: 3rem 2rem 1rem 2rem;
     }
 
     .profile-picture {
@@ -137,13 +137,12 @@ body {
       }
       .light {
         color: $lightblack;
-        background-color: $primary-black;
-        padding:0 0 0 10px;
       }
     }
     .introduce {
       font-size: 2rem;
       line-height: 125%;
+      margin-top: 1rem;
       @include responsive(phones) {
         font-size: 1.6rem;
         padding-top: 2rem;

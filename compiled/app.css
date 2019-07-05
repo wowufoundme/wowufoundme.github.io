@@ -68,11 +68,11 @@ body {
   top: 0; }
   .container .sub-container {
     width: 75%;
-    padding: 6rem; }
+    padding: 5rem 6rem; }
     @media all and (min-width: 1px) and (max-width: 720px) {
       .container .sub-container {
         width: 100%;
-        padding: 4rem 2rem 1rem 2rem; } }
+        padding: 3rem 2rem 1rem 2rem; } }
     .container .sub-container .profile-picture {
       margin-top: 1.2rem;
       margin-bottom: 1.6rem; }
@@ -88,12 +88,11 @@ body {
         .container .sub-container .say-hello {
           font-size: 4rem; } }
       .container .sub-container .say-hello .light {
-        color: #161616;
-        background-color: #000000;
-        padding: 0 0 0 10px; }
+        color: #3a3a3a; }
     .container .sub-container .introduce {
       font-size: 2rem;
-      line-height: 125%; }
+      line-height: 125%;
+      margin-top: 1rem; }
       @media all and (min-width: 1px) and (max-width: 720px) {
         .container .sub-container .introduce {
           font-size: 1.6rem;
