@@ -118,7 +118,7 @@ body {
     }
 
     .profile-picture {
-      margin-top: 4.2rem;
+      margin-top: 1.2rem;
       margin-bottom: 1.6rem;
     }
 
@@ -131,6 +131,7 @@ body {
     .say-hello {
       display: block;
       font-size: 8rem;
+      line-height: 8rem;
       @include responsive(phones) {
         font-size: 4rem;
       }
@@ -141,6 +142,43 @@ body {
       @include responsive(phones) {
         font-size: 1.6rem;
         padding-top: 2rem;
+      }
+
+      .row-container {
+        width: 100%;
+        position: relative;
+        margin: 12px 0;
+
+        .designs {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .row-title {
+          font-size: 1.8rem;
+          font-weight: lighter;
+          text-decoration: underline;
+          margin-bottom: 1rem;
+        }
+
+        .row-section {
+          font-size: 1.4rem;
+
+          .image-design {
+            width: 240px;
+            height: 180px;
+          }
+
+          a {
+            padding: 5px 12px;
+            
+            &:hover {
+              background-color: $green;
+              color: $black;
+            }
+          }
+        }
       }
 
       .network {
@@ -162,6 +200,10 @@ body {
       }
     }
   }
+}
+
+.italics {
+  font-style: italic;
 }
 
 .change-theme {
