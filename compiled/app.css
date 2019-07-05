@@ -101,7 +101,8 @@ body {
         .container .sub-container .introduce .row-container .designs {
           display: flex;
           flex-direction: row;
-          justify-content: space-between; }
+          justify-content: space-between;
+          flex-wrap: wrap; }
         .container .sub-container .introduce .row-container .row-title {
           font-size: 1.8rem;
           font-weight: lighter;
@@ -109,12 +110,17 @@ body {
           margin-bottom: 1rem; }
         .container .sub-container .introduce .row-container .row-section {
           font-size: 1.4rem; }
+          @media all and (min-width: 1px) and (max-width: 720px) {
+            .container .sub-container .introduce .row-container .row-section {
+              font-size: 1.125rem; } }
           .container .sub-container .introduce .row-container .row-section .image-design {
             width: 240px;
             height: 180px; }
-          .container .sub-container .introduce .row-container .row-section a {
+          .container .sub-container .introduce .row-container .row-section a.article-link,
+          .container .sub-container .introduce .row-container .row-section a.code-link {
             padding: 5px 12px; }
-            .container .sub-container .introduce .row-container .row-section a:hover {
+            .container .sub-container .introduce .row-container .row-section a.article-link:hover,
+            .container .sub-container .introduce .row-container .row-section a.code-link:hover {
               background-color: #C0FF00;
               color: #101010; }
       .container .sub-container .introduce .network {

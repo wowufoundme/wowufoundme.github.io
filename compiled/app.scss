@@ -153,6 +153,7 @@ body {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          flex-wrap: wrap;
         }
 
         .row-title {
@@ -164,13 +165,17 @@ body {
 
         .row-section {
           font-size: 1.4rem;
+          @include responsive(phones) {
+            font-size: 1.125rem;
+          }
 
           .image-design {
             width: 240px;
             height: 180px;
           }
 
-          a {
+          a.article-link,
+          a.code-link {
             padding: 5px 12px;
             
             &:hover {
