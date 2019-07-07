@@ -81,14 +81,15 @@ body {
       height: 256px;
       border-radius: 50%; }
     .container .sub-container .say-hello {
-      display: block;
+      color: #3a3a3a;
+      display: flex;
       font-size: 8rem;
       line-height: 8rem; }
       @media all and (min-width: 1px) and (max-width: 720px) {
         .container .sub-container .say-hello {
           font-size: 4rem; } }
-      .container .sub-container .say-hello .light {
-        color: #3a3a3a; }
+      .container .sub-container .say-hello div {
+        cursor: pointer; }
     .container .sub-container .introduce {
       font-size: 2rem;
       line-height: 125%;
@@ -139,6 +140,25 @@ body {
 
 .italics {
   font-style: italic; }
+
+.active {
+  color: #DDDDDD;
+  position: relative; }
+  .active:after {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 3px;
+    height: 6px;
+    width: 50px;
+    background-color: #DDDDDD;
+    z-index: 999; }
+
+.hidden {
+  display: none; }
+
+.visible {
+  display: block; }
 
 .change-theme {
   margin: 8px 0;

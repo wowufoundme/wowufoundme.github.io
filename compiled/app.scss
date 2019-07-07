@@ -129,14 +129,15 @@ body {
     }
   
     .say-hello {
-      display: block;
+      color: $lightblack;
+      display: flex;
       font-size: 8rem;
       line-height: 8rem;
       @include responsive(phones) {
         font-size: 4rem;
       }
-      .light {
-        color: $lightblack;
+      div {
+        cursor: pointer;
       }
     }
     .introduce {
@@ -213,6 +214,30 @@ body {
 
 .italics {
   font-style: italic;
+}
+
+.active {
+  color: $offwhite;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -2px;
+    left: 3px;
+    height: 6px;
+    width: 50px;
+    background-color: $offwhite;
+    z-index: 999;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .change-theme {
