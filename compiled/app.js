@@ -2,23 +2,33 @@ particlesJS.load('particles-js', '/compiled/particles.json', function() {
    console.log('callback - particles.js config loaded');
 });
 
-LIGHTBLACK = '#1E1E1E'
-BLACK = '#101010'
-OFFWHITE = '#DDDDDD'
-THEME = 0
-
 $(document).ready(function() {
-$('#theme').click(function() {
-  if (THEME == 0) {
-    $('body').css('color', BLACK);
-    $('body').css('background-color', OFFWHITE);
-    $('#theme').text("Switch to Dark Theme");
-    THEME = 1
-  } else {
-    $('body').css('color', OFFWHITE);
-    $('body').css('background-color', BLACK);
-    $('#theme').text("Switch to Light Theme");
-    THEME = 0
-  }
-});
+  $('.home').addClass('active');
+  $('#work').addClass('hidden');
+
+  ONHOME = true
+  ONWORK = false
+
+  $('.work').click(function() {
+    if (ONHOME) {
+      $('#say-hello').addClass('hidden');
+      $('#work').removeClass('hidden');
+      $('.home').removeClass('active');
+      $('.work').addClass('active');
+      ONHOME = false
+      ONWORK = true
+    }
+  });
+
+  $('.home').click(function() {
+    if (ONWORK) {
+      $('#say-hello').removeClass('hidden');
+      $('#work').addClass('hidden');
+      $('.home').addClass('active');
+      $('.work').removeClass('active');
+      ONHOME = true
+      ONWORK = false
+    }
+  });
+
 });
