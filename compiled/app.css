@@ -138,6 +138,10 @@ body {
           color: #101010;
           background-color: #C0FF00; }
 
+.resume {
+  color: #C0FF00;
+  background-color: #000000; }
+
 .italics {
   font-style: italic; }
 
