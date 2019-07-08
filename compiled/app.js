@@ -30,5 +30,10 @@ $(document).ready(function() {
       ONWORK = false
     }
   });
-
+  $("#ghost").ghosttyper({
+    messages: ['front-end developer', 'graphic designer', 'ui/ux designer', 'android rom developer','coffee lover'],
+    timeWrite: 100,
+    timeDelete: 50,
+    timePause: 1000
+  });
 });
