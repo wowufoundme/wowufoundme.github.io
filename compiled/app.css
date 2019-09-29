@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto:100,300,400&display=swap");
 @font-face {
   font-family: 'SF Pro Display';
   src: url("../fonts/SFProDisplay-Regular.ttf"); }
@@ -50,6 +51,11 @@ body {
   color: #DDDDDD;
   width: 100%;
   height: 100%; }
+
+body.blog-body {
+  background-color: #ececec;
+  color: #101010;
+  height: auto; }
 
 #particles-js {
   width: 100%;
@@ -192,5 +198,42 @@ body {
 
 .fw7 {
   font-weight: 700; }
+
+.blog {
+  width: 45%;
+  margin: 100px; }
+
+.blog-title {
+  font-family: "PT Serif", sans-serif;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  margin: 10px 0 20px 0;
+  position: relative;
+  display: block; }
+  .blog-title:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1px;
+    width: 600px;
+    background-color: #c8c8c8;
+    bottom: -10px;
+    left: 0; }
+
+.blog-date {
+  font-family: "PT Serif", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-style: italic; }
+
+.blog-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  word-spacing: 1px; }
+  .blog-text p {
+    margin: 10px 0; }
 
 /*# sourceMappingURL=app.css.map */
