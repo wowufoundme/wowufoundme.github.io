@@ -4,8 +4,12 @@
   src: url('../fonts/SFProDisplay-Regular.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto:100,300,400&display=swap');
+
 //Variables
 $primary-font:  'SF Pro Display','Helvetica','Helvetica Neue', 'Arial', sans-serif;
+$blog-title : 'PT Serif', sans-serif;
+$blog-text : 'Roboto', sans-serif;
 $primary-black: #000000;
 $green: #C0FF00;
 $black: #101010;
@@ -89,6 +93,12 @@ body {
   color: $offwhite;
   width: 100%;
   height: 100%;
+}
+
+body.blog-body {
+  background-color: #ececec;
+  color: $black;
+  height: auto;
 }
 
 #particles-js {
@@ -272,3 +282,52 @@ body {
 .fw5 { font-weight: 500; }
 .fw6 { font-weight: 600; }
 .fw7 { font-weight: 700; }
+
+
+// BLOG STYLES
+
+.blog {
+  width: 45%;
+  margin: 100px;
+
+}
+
+.blog-title {
+  font-family: $blog-title;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  margin: 10px 0 20px 0;
+  position: relative;
+  display: block;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1px;
+    width: 600px;
+    background-color: rgb(200, 200, 200);
+    bottom: -10px;
+    left: 0;
+  }
+}
+
+.blog-date {
+  font-family: $blog-title;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.blog-text {
+  font-family: $blog-text;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 150%;
+  word-spacing: 1px;
+
+  p {
+    margin: 10px 0;
+  }
+}
