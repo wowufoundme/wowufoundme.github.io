@@ -113,6 +113,12 @@ body.blog-body {
   padding: 0 5px;
 }
 
+.green-text {
+  color: $green;
+  background-color: $primary-black;
+  padding: 0 5px;
+}
+
 .container {
   width: 80%;
   height: 100%;
@@ -222,6 +228,27 @@ body.blog-body {
   }
 }
 
+
+// MODAL Section
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  // display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $black;
+  z-index: 9999;
+  border: 2px solid $offwhite;
+  transform: rotateZ(-90deg);
+}
+
+.overlay-hidden {
+  transform: translateY(20%);
+}
+
 .resume {
   color: $green;
   background-color: $primary-black;
@@ -271,6 +298,14 @@ body.blog-body {
 /*----------extras--------*/
 .hide {
   display: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.pointer-cursor {
+  cursor: pointer;
 }
 
 .show {

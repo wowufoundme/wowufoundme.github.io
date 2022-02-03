@@ -32,8 +32,11 @@ $(document).ready(function() {
   });
   $("#ghost").ghosttyper({
     messages: ['full time student at New York University pursuing a Master\'s degree in Computer Science, sometimes front-end developer, sometimes graphic designer, sometimes ui/ux designer, partly music producer and full time coffee lover'],
-    timeWrite: 20,
+    timeWrite: 50,
     timeDelete: 100000,
     repeat: false
   });
+
+  $('.modal').onclick().addClass('overlay-hidden');
+
 });
