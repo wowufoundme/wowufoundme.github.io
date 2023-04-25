@@ -18,6 +18,8 @@ $blue: #004DFF;
 $white: #FFFFFF;
 $offwhite: #DDDDDD;
 $darkwhite: #666666;
+$red: #b71540;
+$lightred: #e55039;
 
 // Reponsive Breakpoints
 $sm-screen: 720px;
@@ -91,20 +93,78 @@ footer, header, hgroup, menu, nav, section {
 body {
   font: normal 16px/24px $primary-font;
   background-color: $black;
-  color: $offwhite;
+  color: $lightblack;
   width: 100%;
   height: 100%;
   overflow-y: scroll;
 }
 
+// .background-layer {
+//   background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/backdrop.jpg');
+//   z-index: -1;
+//   height: 100%;
+//   width: 100%;
+//   background-position: left;
+//   background-size: cover;
+//   position: fixed;
+// }
+
 .background-layer {
-  background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/backdrop.jpg');
+  background-color: #DDDDDD;
   z-index: -1;
   height: 100%;
   width: 100%;
   background-position: left;
   background-size: cover;
   position: fixed;
+}
+
+.name-color {
+  color: $red;
+}
+
+.social {
+  list-style-type: none;
+  font-weight: bold;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.social li {
+  color: $red;
+  width: 100%;
+  position: relative;
+  margin-top: 2px;
+  transition: all 0.1s ease-in-out;
+}
+
+.social li a {
+  padding: 2px 15px 2px 6px;
+}
+
+.social li:hover {
+  color: $white;
+}
+
+.social li:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: $red;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-110%);
+  transition: all 0.1s ease-in-out;
+}
+
+.social li:hover:before {
+  transform: translateX(0%);
+}
+
+.placeholder {
+  font-size: 3rem;
+  padding: 8%;
+  line-height: 120%;
 }
 
 body.blog-body {
