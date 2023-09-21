@@ -11,7 +11,7 @@
 	<title>Shubhkirti Sharma | Digital Designer &amp; Front End Developer</title>
 	<link rel="canonical" href="">
 	<!--Stylesheets-->
-	<link href="css/styles.css" rel="stylesheet" media="all">
+	<link href="css/styles.min.css" rel="stylesheet" media="all">
 	<link href="css/normalize.css" rel="stylesheet" media="all">
 	<!--Google Font APIs-->
 	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
@@ -43,8 +43,8 @@
 
   <!-- Section Buttons -->
 	<!-- <div class="button __button_info"> <a href="javascript:void(0)" id="moreToggle"><code class="code info-text">About Me</code></a> -->
-  <!-- <div class="button __button_info"> <a href="./backup/old/"><code class="code info-text">Old Site</code></a>
-  </div> -->
+  <div class="button __button_info"> <a href="./backup/old/"><code class="code info-text">Old Site</code></a>
+  </div>
 	<!-- <div class="button __button_work"> <a href="javascript:void(0)" id="workToggle"><code class="code work-text">Work</code></a>
 	</div> -->
 
@@ -66,38 +66,37 @@
 	<div class="container">
 
 
-    <div class="subcontainer">
-      <!-- Everything inside this-->
-
-      <img src="./shubh.png" class="display_pic">
-
-
-      <div class="hero">
-          <div class="marker title"> <span class="underline">Shubhkirti</span> Sharma</div>
-      </div>
-
-      <div class="intro">
-        <p>
-          Hi, I am Shubh and I just graduated in May '23 with a Master's in Computer Science from NYU Tandon School of Engineering. I have a keen interest in <span id="bkey"> data analytics, data visualization and business consulting</span> (and a side love for web development). I'm currently looking for full time opportunities where I can generate analytics and insights that ultimately lead to business decisions. I love to curate solutions with data that depicts a story, and brings together business and technology.
-        </p>
-      </div>
-
-      <nav>
-        Feel free to checkout my <a href="https://drive.google.com/file/d/18s2796d2i7F441hCMZk9Q3QlemeBJZYr/view" target="_blank">resume</a>, or connect with me on <a href="https://www.linkedin.com/in/shubhkirtisharma/" target="_blank">LinkedIn</a> or just drop a Hi [👋] on <a href="mailto:ss13905@nyu.edu">ss13905@nyu.edu</a>
-      </nav>
-
-      <div class="footer">
-        Made with <span id="rkey">♥</span> in New York City
-      </div>
-
-
-    </div>
-
-    
+    <!-- Name heading container-->
+		<div class="marker-top">
+			<div class="hero">
+				<div class="marker title"> <span class="underline">Shubhkirti</span> Sharma</div>
+			</div>
+		</div>
 
 
     <!-- Bottom info container -->
-
+		<div class="marker-bottom">
+			<div class="hero">
+				<span class="marker description"> 
+          <span class="__mark_">Data Analyst, Software Developer and Frontend Designer</span>
+					<br /><span class="__mark_">Code, Coffee and Music</span>
+					<br /><span class="__mark_">New Delhi, India <i class="fa fa-long-arrow-right" aria-hidden="true"></i> New York City</span>
+          <br /><span class="__mark_">I am currently in the process of revamping my portfolio.
+          You can still have a look at the old site</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="slider">
+		<div class="nav">
+			<div class="nav-list"> <a href="https://www.facebook.com/shubhkirti.sharma" target="_blank" class="nav-element"><span>&mdash; fb</span><code><i class="fa fa-facebook"></i></code></a>
+				<a href="https://twitter.com/__shubhkirti__" target="_blank" class="nav-element"><span>&mdash; tw</span><code><i class="fa fa-twitter"></i></code></a>
+				<a href="https://www.instagram.com/shubhkirtisharma" target="_blank" class="nav-element"><span>&mdash; insta</span><code><i class="fa fa-instagram"></i></code></a>
+				<a href="https://github.com/wowufoundme" target="_blank" class="nav-element"><span>&mdash; git</span><code><i class="fa fa-github"></i></code></a>
+				<a href="mailto:shubhkirti.work@gmail.com" class="nav-element"><span>&mdash; @mail</span></a>
+			</div>
+		</div>
+	</div> -->
 	<script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="Shubhkirti Sharma">
+	<meta name="description" content="web portfolio - Shubhkirti Sharma">
+	<meta name="keywords" content="Shubhkirti, Sharma, front-end, designer,front, end">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Shubhkirti Sharma | Digital Designer &amp; Front End Developer</title>
+	<link rel="canonical" href="www.shubhkirtisharma.com">
+	<!--Stylesheets-->
+	<link href="css/styles.min.css" rel="stylesheet" media="all">
+	<link href="css/normalize.css" rel="stylesheet" media="all">
+	<!--Google Font APIs-->
+	<link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+	<!--Font Awesome Icon Font-->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--Favicons Data-->
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+	<link rel="manifest" href="./favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!--Fallback for IE-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<div class="button __button_info"> <a href="javascript:void(0)" id="moreToggle"><code class="code info-text">About Me</code></a>
+	</div>
+	<!-- <div class="button __button_work"> <a href="javascript:void(0)" id="workToggle"><code class="code work-text">Work</code></a>
+	</div> -->
+	<div class="bt-menu" id="nav-collapse">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<div class="__loader_wrap">
+		<div class="__loader_content">Loading CONTENT...</div>
+	</div>
+	<div class="container">
+		<div class="marker-top">
+			<div class="hero">
+				<div class="marker title"> <span class="underline">Shubhkirti</span> Sharma</div>
+			</div>
+		</div>
+		<div class="marker-bottom">
+			<div class="hero">
+				<div class="marker description"> <span class="__mark_">Digital Designer</span>
+					<br> <span class="__mark_">Front End Developer</span>
+					<br> <span class="__mark_">New Delhi, India</span>
+				</div>
+			</div>
+		</div>
+		<div class="more-info">
+			<div class="info-container">
+				<div class="introduction">
+					<div class="__short_intro"> <span class="__mark_lt">Bello.</span>
+						<br>I am Shubhkirti Sharma. A freelance <span>digital designer</span>.
+						<br>I help small teams develop a strong web presence. I mostly work with HTML and CSS with pinch of jQuery and sometimes using Bootstrap Framework if necessary.
+						<br>
+						<ul class="list">
+							<li class="__mark_">&lt;HTML&gt;</li>
+							<li class="__mark_">{CSS}</li>
+							<li class="__mark_">$jQuery</li>
+							<li class="__mark_">Bootstrap</li>
+							<li class="__mark_">C, C++ &amp; Java</li>
+						</ul>
+						<br>Have something in mind? Let's grab some <i class="fa fa-coffee"></i> and talk...</div>
+					<div class="__long_intro"> <span class="__mark_lt">Hey There!</span>
+						<br>I am Shubhkirti Sharma. A nineteen year young digital designer currently in Chandigarh. I was born and brought up in New Delhi, India.
+						<br>The thoughts of becoming a digital designer started revolving around my mind when I was 10<sup>th</sup> grade and since then I started indulging myself into various coding activities. I started learning C &amp; C++ at that time, but soon started to focus on HTML and CSS.
+						<br>Most of the time, I used to get inspirations from various Digital Agencies and Designers around the globe some of them being <span><a href="http://ueno.co/">Ueno</a></span>, <span><a href="#">Tobias Van Schneider</a></span> and <span><a href="#">Hello Monday</a></span>. I never thought jQuery and Javascript are so necessary for Web Designing and Development untill in 11<sup>th</sup> when I did realize. BANG! It struck my head.
+						<br>While I was in class 11<sup>th</sup>, I also learned making music on FL Studio and tried to create some shitty tracks, but just so if you are like interested, you can listen to them on my <span><a href="#">Soundcloud</a></span>. (I am still warning you. They are shit.)
+						<br>In 2015, I graduated high school and thought to give IIT a try, so I dropped an year and went Kota, Rajasthan to prepare for it. Unfortunately, I didn't make it, but I still wanted to do Computer Science Engineering and so I went forward to join UIET, Panjab University.
+						<br>
+						<br>Since the past year in Chandigarh, I have made a couple of great friends and not to forget, this city is amazing.
+						<br>Along with this I extremely love listening to music mostly Trance, Coldplay and Illenium with some mixes including 90s Hit and &lt;coding&gt; any shit. I also play football in free time.
+						<br>I have been looking for opportunities to grab till that time I am working on small projects. If you have something in mind, we can surely discuss over a cup of <i class="fa fa-coffee"></i>. I love meeting new people.
+						<br>Buh Bie!</div>
+					<div class="__button_more">Read complete story...</div>
+				</div>
+			</div>
+		</div>
+		<div class="work-section"></div>
+	</div>
+	<div class="slider">
+		<div class="nav">
+			<div class="nav-list"> <a href="https://www.facebook.com/shubhkirti.sharma" target="_blank" class="nav-element"><span>&mdash; fb</span><code><i class="fa fa-facebook"></i></code></a>
+				<a href="https://twitter.com/__shubhkirti__" target="_blank" class="nav-element"><span>&mdash; tw</span><code><i class="fa fa-twitter"></i></code></a>
+				<a href="https://www.instagram.com/shubhkirtisharma" target="_blank" class="nav-element"><span>&mdash; insta</span><code><i class="fa fa-instagram"></i></code></a>
+				<a href="https://github.com/wowufoundme" target="_blank" class="nav-element"><span>&mdash; git</span><code><i class="fa fa-github"></i></code></a>
+				<a href="mailto:shubhkirti.work@gmail.com" class="nav-element"><span>&mdash; @mail</span></a>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
